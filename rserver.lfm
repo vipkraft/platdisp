@@ -1,0 +1,717 @@
+object FormR: TFormR
+  Left = 532
+  Height = 768
+  Top = 196
+  Width = 904
+  BorderIcons = []
+  Caption = 'Данные рейса на удаленном сервере'
+  ClientHeight = 768
+  ClientWidth = 904
+  Font.Height = -15
+  KeyPreview = True
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  OnPaint = FormPaint
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '1.6.4.0'
+  object Label1: TLabel
+    Left = 51
+    Height = 20
+    Top = 12
+    Width = 138
+    Alignment = taCenter
+    Caption = 'данные по рейсу:'
+    Font.Height = -17
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label43: TLabel
+    Left = 0
+    Height = 57
+    Top = 707
+    Width = 904
+    Align = alBottom
+    Anchors = [akBottom]
+    BorderSpacing.Bottom = 4
+    Caption = '------------------------------------------------Информация-----------------------------------------------------------------------------------'#10'    [F1]  -  Помощь                                                                  [F6]    -  Печать ведомости'#10'    [F2]  -  Смена этажа                                                         [ESC]  -   Отмена/Выход'
+    Font.Color = clBlue
+    Font.Height = -16
+    ParentColor = False
+    ParentFont = False
+  end
+  object GroupBox2: TGroupBox
+    Left = 12
+    Height = 78
+    Top = 268
+    Width = 74
+    Caption = 'ЭТАЖ'
+    ClientHeight = 58
+    ClientWidth = 70
+    TabOrder = 0
+    object Label4: TLabel
+      Left = 7
+      Height = 53
+      Top = 2
+      Width = 55
+      Alignment = taCenter
+      AutoSize = False
+      BorderSpacing.CellAlignVertical = ccaCenter
+      Caption = '1'
+      Color = clNavy
+      Font.Color = clWhite
+      Font.Height = -49
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+    end
+  end
+  object StringGrid2: TStringGrid
+    Left = 16
+    Height = 181
+    Top = 356
+    Width = 877
+    Color = clSilver
+    ColCount = 25
+    DefaultColWidth = 35
+    DefaultDrawing = False
+    DefaultRowHeight = 35
+    FixedCols = 0
+    FixedRows = 0
+    Options = []
+    ScrollBars = ssNone
+    TabOrder = 1
+    TitleFont.Height = -11
+    Visible = False
+    OnDrawCell = StringGrid2DrawCell
+    OnSelectCell = StringGrid2SelectCell
+  end
+  object GroupBox4: TGroupBox
+    Left = 12
+    Height = 129
+    Top = 545
+    Width = 882
+    Caption = 'ИНФОРМАЦИЯ О ВЫБРАННОМ МЕСТЕ'
+    ClientHeight = 109
+    ClientWidth = 878
+    TabOrder = 2
+    object Label20: TLabel
+      Left = 7
+      Height = 19
+      Top = 13
+      Width = 131
+      Caption = 'Текущее место №'
+      Font.Height = -16
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label21: TLabel
+      Left = 7
+      Height = 19
+      Top = 44
+      Width = 84
+      Caption = 'Состояние:'
+      Font.Height = -16
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label22: TLabel
+      Left = 7
+      Height = 19
+      Top = 77
+      Width = 101
+      Caption = 'Примечание:'
+      Font.Height = -16
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label23: TLabel
+      Left = 382
+      Height = 19
+      Top = 13
+      Width = 167
+      Caption = 'Когда забронировано:'
+      Font.Height = -16
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label24: TLabel
+      Left = 395
+      Height = 19
+      Top = 44
+      Width = 155
+      Caption = 'Кем забронировано:'
+      Font.Height = -16
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label25: TLabel
+      Left = 171
+      Height = 19
+      Top = 13
+      Width = 9
+      Caption = '1'
+      Font.Height = -16
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label26: TLabel
+      Left = 127
+      Height = 19
+      Top = 44
+      Width = 9
+      Caption = '2'
+      Font.Height = -16
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label27: TLabel
+      Left = 127
+      Height = 20
+      Top = 77
+      Width = 707
+      AutoSize = False
+      Caption = '3'
+      Font.Height = -16
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label28: TLabel
+      Left = 580
+      Height = 19
+      Top = 13
+      Width = 9
+      Caption = '4'
+      Font.Height = -16
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label29: TLabel
+      Left = 580
+      Height = 19
+      Top = 44
+      Width = 9
+      Caption = '5'
+      Font.Height = -16
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+  object Label2: TLabel
+    Left = 12
+    Height = 20
+    Top = 45
+    Width = 182
+    Caption = 'на удаленном сервере:'
+    Font.Height = -17
+    ParentColor = False
+    ParentFont = False
+  end
+  object GroupBox1: TGroupBox
+    Left = 12
+    Height = 187
+    Top = 76
+    Width = 878
+    ClientHeight = 183
+    ClientWidth = 874
+    TabOrder = 3
+    object Label3: TLabel
+      Left = 7
+      Height = 18
+      Top = 11
+      Width = 145
+      Caption = ' СОСТОЯНИЕ РЕЙСА:'
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label5: TLabel
+      Left = 183
+      Height = 18
+      Top = 11
+      Width = 146
+      Caption = 'ДООБИЛЕЧИВАНИЕ'
+      Font.Height = -15
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label6: TLabel
+      Left = 317
+      Height = 18
+      Top = 46
+      Width = 101
+      Caption = ' ПЕРЕВОЗЧИК:'
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label7: TLabel
+      Left = 443
+      Height = 18
+      Top = 46
+      Width = 97
+      Caption = 'ПЕРЕВОЗЧИК'
+      Font.Height = -15
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label8: TLabel
+      Left = 7
+      Height = 18
+      Top = 46
+      Width = 66
+      Caption = ' АТС ТИП:'
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label10: TLabel
+      Left = 317
+      Height = 18
+      Top = 81
+      Width = 33
+      Caption = ' АТС:'
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label11: TLabel
+      Left = 363
+      Height = 18
+      Top = 81
+      Width = 27
+      Caption = 'АТС'
+      Font.Height = -15
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label9: TLabel
+      Left = 92
+      Height = 18
+      Top = 46
+      Width = 22
+      Caption = 'М2'
+      Font.Height = -15
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label12: TLabel
+      Left = 130
+      Height = 18
+      Top = 46
+      Width = 64
+      Caption = ' ЭТАЖЕЙ:'
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label13: TLabel
+      Left = 213
+      Height = 18
+      Top = 46
+      Width = 60
+      Caption = 'ЭТАЖЕЙ'
+      Font.Height = -15
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label30: TLabel
+      Left = 7
+      Height = 18
+      Top = 81
+      Width = 179
+      Caption = ' МЕСТ ВСЕГО/СВОБОДЫХ:'
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label31: TLabel
+      Left = 222
+      Height = 19
+      Top = 80
+      Width = 52
+      Caption = 'МЕСТА'
+      Font.Height = -16
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label32: TLabel
+      Left = 374
+      Height = 18
+      Top = 11
+      Width = 52
+      Caption = 'ВРЕМЯ:'
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label33: TLabel
+      Left = 438
+      Height = 19
+      Top = 10
+      Width = 64
+      Caption = '12:15:59'
+      Font.Height = -16
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label35: TLabel
+      Left = 535
+      Height = 18
+      Top = 11
+      Width = 38
+      Caption = 'ДАТА:'
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label36: TLabel
+      Left = 587
+      Height = 19
+      Top = 10
+      Width = 82
+      Caption = '21.12.2012'
+      Color = clBackground
+      Font.Height = -16
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+    end
+    object Label37: TLabel
+      Left = 7
+      Height = 18
+      Top = 149
+      Width = 50
+      Caption = ' Ф.И.О.'
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label38: TLabel
+      Left = 75
+      Height = 18
+      Top = 149
+      Width = 80
+      Caption = 'ФАМИЛИЯ'
+      Font.Height = -15
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label39: TLabel
+      Left = 268
+      Height = 18
+      Top = 149
+      Width = 108
+      Caption = ' ПРИМЕЧАНИЕ:'
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label40: TLabel
+      Left = 396
+      Height = 37
+      Top = 141
+      Width = 478
+      AutoSize = False
+      Caption = 'ПРИМЕЧАНИЕ'
+      Color = clDefault
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+    end
+    object Label44: TLabel
+      Left = 702
+      Height = 18
+      Top = 11
+      Width = 83
+      Caption = ' ОПЕРАЦИИ'
+      Color = clBackground
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+    end
+    object Label50: TLabel
+      Left = 7
+      Height = 18
+      Top = 112
+      Width = 70
+      Caption = ' ПУТЕВКА:'
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label51: TLabel
+      Left = 93
+      Height = 18
+      Top = 112
+      Width = 65
+      Caption = 'ПУТЕВКА'
+      Font.Height = -15
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label52: TLabel
+      Left = 217
+      Height = 18
+      Top = 112
+      Width = 82
+      Caption = 'ВОДИТЕЛИ:'
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label53: TLabel
+      Left = 507
+      Height = 1
+      Top = 112
+      Width = 1
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label55: TLabel
+      Left = 317
+      Height = 18
+      Top = 112
+      Width = 8
+      Caption = '1'
+      Font.Height = -15
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+  object Label41: TLabel
+    Left = 227
+    Height = 22
+    Top = 10
+    Width = 167
+    Alignment = taCenter
+    Caption = 'данные по рейсу:'
+    Font.Height = -19
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label42: TLabel
+    Left = 236
+    Height = 22
+    Top = 43
+    Width = 67
+    Alignment = taCenter
+    Caption = 'сервер'
+    Font.Height = -19
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label45: TLabel
+    Left = 768
+    Height = 18
+    Top = 45
+    Width = 109
+    Caption = 'по расписанию'
+    Font.Height = -15
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label46: TLabel
+    Left = 540
+    Height = 19
+    Top = 45
+    Width = 41
+    Alignment = taCenter
+    Caption = '12:10'
+    Font.Height = -16
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label47: TLabel
+    Left = 474
+    Height = 18
+    Top = 45
+    Width = 53
+    Caption = ' время:'
+    Color = clBackground
+    Font.Height = -15
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object Label48: TLabel
+    Left = 598
+    Height = 18
+    Top = 45
+    Width = 39
+    Caption = ' дата:'
+    Font.Height = -15
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label49: TLabel
+    Left = 655
+    Height = 19
+    Top = 45
+    Width = 82
+    Alignment = taCenter
+    Caption = '21.12.2012'
+    Font.Height = -16
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object GroupBox3: TGroupBox
+    Left = 88
+    Height = 78
+    Top = 268
+    Width = 806
+    Caption = 'ОБОЗНАЧЕНИЯ'
+    ClientHeight = 58
+    ClientWidth = 802
+    TabOrder = 4
+    object Shape1: TShape
+      Left = 184
+      Height = 20
+      Top = 31
+      Width = 20
+      Brush.Color = 16748108
+    end
+    object Label14: TLabel
+      Left = 208
+      Height = 18
+      Top = 33
+      Width = 89
+      Caption = '- бронь ОПП'
+      ParentColor = False
+    end
+    object Label15: TLabel
+      Left = 208
+      Height = 18
+      Top = 6
+      Width = 138
+      Caption = '- транзитные места'
+      ParentColor = False
+    end
+    object Shape2: TShape
+      Left = 184
+      Height = 20
+      Top = 4
+      Width = 20
+      Brush.Color = clGray
+    end
+    object Label16: TLabel
+      Left = 34
+      Height = 18
+      Top = 6
+      Width = 116
+      Caption = '- место продано'
+      ParentColor = False
+    end
+    object Shape3: TShape
+      Left = 8
+      Height = 20
+      Top = 4
+      Width = 20
+      Brush.Color = 10855919
+    end
+    object Shape4: TShape
+      Left = 395
+      Height = 20
+      Top = 31
+      Width = 20
+      Brush.Color = 8975862
+    end
+    object Label17: TLabel
+      Left = 421
+      Height = 18
+      Top = 33
+      Width = 149
+      Caption = '- бронь ДИСПЕТЧЕРА'
+      ParentColor = False
+    end
+    object Shape5: TShape
+      Left = 395
+      Height = 20
+      Top = 4
+      Width = 20
+      Brush.Color = 8826766
+    end
+    object Label18: TLabel
+      Left = 421
+      Height = 18
+      Top = 6
+      Width = 123
+      Caption = '- бронь СПРАВКИ'
+      ParentColor = False
+    end
+    object Shape6: TShape
+      Left = 8
+      Height = 20
+      Top = 31
+      Width = 20
+    end
+    object Label19: TLabel
+      Left = 34
+      Height = 18
+      Top = 33
+      Width = 78
+      Caption = '- свободно'
+      ParentColor = False
+    end
+    object Shape7: TShape
+      Left = 635
+      Height = 20
+      Top = 31
+      Width = 20
+      Brush.Color = clBlack
+      Pen.Color = clNone
+    end
+    object Label34: TLabel
+      Left = 659
+      Height = 18
+      Top = 33
+      Width = 105
+      Caption = '- ВЫЧЕРКНУТО'
+      ParentColor = False
+    end
+  end
+  object ZConnection2: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = False
+    Properties.Strings = (
+      'AutoEncodeStrings='
+    )
+    TransactIsolationLevel = tiReadCommitted
+    Port = 0
+    Protocol = 'postgresql'
+    left = 576
+    top = 407
+  end
+  object ZReadOnlyQuery2: TZReadOnlyQuery
+    Connection = ZConnection2
+    ParamCheck = False
+    Params = <>
+    left = 743
+    top = 417
+  end
+end

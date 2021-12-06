@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="10"/>
+    <General>
+      <MainUnit Value="0"/>
+      <AutoCreateForms Value="False"/>
+      <Title Value="АСПБ ПЛАТФОРМА АВ АРМ ДИСПЕТЧЕР"/>
+      <UseAppBundle Value="False"/>
+      <ResourceType Value="res"/>
+      <Icon Value="0"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <VersionInfo>
+      <UseVersionInfo Value="True"/>
+      <AutoIncrementBuild Value="True"/>
+      <MajorVersionNr Value="1"/>
+      <MinorVersionNr Value="1"/>
+      <BuildNr Value="9"/>
+      <Language Value="0419"/>
+      <CharSet Value="04B0"/>
+      <StringTable CompanyName="ОАО АВТОВОКЗАЛ" LegalCopyright="Лубенцов" ProductName="АСПБ ПЛАТФОРМА АВ ДИСПЕТЧЕР" ProductVersion=""/>
+    </VersionInfo>
+    <BuildModes Count="3" Active="Debug">
+      <Item1 Name="Default" Default="True"/>
+      <Item2 Name="Debug">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="platdisp"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <Parsing>
+            <SyntaxOptions>
+              <IncludeAssertionCode Value="True"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <Checks>
+              <IOChecks Value="True"/>
+              <RangeChecks Value="True"/>
+              <OverflowChecks Value="True"/>
+              <StackChecks Value="True"/>
+            </Checks>
+            <VerifyObjMethodCallValidity Value="True"/>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <DebugInfoType Value="dsDwarf2Set"/>
+              <UseHeaptrc Value="True"/>
+              <TrashVariables Value="True"/>
+              <UseExternalDbgSyms Value="True"/>
+            </Debugging>
+          </Linking>
+          <Other>
+            <Verbosity>
+              <ShowWarn Value="False"/>
+              <ShowNotes Value="False"/>
+              <ShowHints Value="False"/>
+            </Verbosity>
+            <CompilerMessages>
+              <IgnoredMessages idx2031="True"/>
+            </CompilerMessages>
+          </Other>
+        </CompilerOptions>
+      </Item2>
+      <Item3 Name="Release">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="platdisp"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+              <StripSymbols Value="True"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+          </Linking>
+          <Other>
+            <Verbosity>
+              <ShowWarn Value="False"/>
+              <ShowNotes Value="False"/>
+              <ShowHints Value="False"/>
+            </Verbosity>
+            <CompilerMessages>
+              <IgnoredMessages idx2031="True"/>
+            </CompilerMessages>
+          </Other>
+        </CompilerOptions>
+      </Item3>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="7">
+      <Item1>
+        <PackageName Value="zcomponent"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="Printer4Lazarus"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="FCL"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="LazMouseAndKeyInput"/>
+      </Item4>
+      <Item5>
+        <PackageName Value="LCL"/>
+      </Item5>
+      <Item6>
+        <PackageName Value="DateTimeCtrls"/>
+        <MinVersion Major="1" Minor="3" Valid="True"/>
+      </Item6>
+      <Item7>
+        <PackageName Value="LCLBase"/>
+        <MinVersion Major="1" Release="1" Valid="True"/>
+      </Item7>
+    </RequiredPackages>
+    <Units Count="26">
+      <Unit0>
+        <Filename Value="platdisp.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="12" Y="6"/>
+        <UsageCount Value="203"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="maindisp.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UsageCount Value="203"/>
+        <Bookmarks Count="8">
+          <Item0 X="16" Y="469" ID="3"/>
+          <Item1 X="13" Y="3226" ID="1"/>
+          <Item2 X="6" Y="3690" ID="2"/>
+          <Item3 Y="2781" ID="5"/>
+          <Item4 Y="3266" ID="4"/>
+          <Item5 Y="8287" ID="9"/>
+          <Item6 Y="7927" ID="8"/>
+          <Item7 X="11" Y="5820" ID="7"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="platproc.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="11"/>
+        <TopLine Value="1965"/>
+        <CursorPos X="26" Y="1978"/>
+        <UsageCount Value="203"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="menu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormMenu"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="22"/>
+        <CursorPos X="30" Y="2091"/>
+        <ComponentState Value="1"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="zakaz_main.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form2"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="2079"/>
+        <CursorPos X="31" Y="2095"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="wibor_atp.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form3"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="9"/>
+        <CursorPos X="39" Y="31"/>
+        <UsageCount Value="201"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="sostav_main.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form4"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="14"/>
+        <TopLine Value="371"/>
+        <CursorPos X="23" Y="384"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="wibor_ats.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form5"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="60"/>
+        <CursorPos X="60" Y="76"/>
+        <UsageCount Value="201"/>
+        <Loaded Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="message_idle.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormIdle"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="47" Y="13"/>
+        <UsageCount Value="200"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="bron_main.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form7"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="12"/>
+        <TopLine Value="1915"/>
+        <CursorPos X="15" Y="1921"/>
+        <UsageCount Value="203"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="doobil.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form8"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="8"/>
+        <CursorPos X="75" Y="23"/>
+        <UsageCount Value="201"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="htmlproc.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="35" Y="8"/>
+        <UsageCount Value="154"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="vedom_view.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormV"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="10"/>
+        <TopLine Value="386"/>
+        <CursorPos X="21" Y="399"/>
+        <UsageCount Value="201"/>
+        <Loaded Value="True"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="vedom_html.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="9"/>
+        <TopLine Value="192"/>
+        <CursorPos X="43" Y="220"/>
+        <UsageCount Value="206"/>
+        <Loaded Value="True"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="rserver.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormR"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="13"/>
+        <TopLine Value="453"/>
+        <CursorPos X="41" Y="467"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="remote.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form6"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="415"/>
+        <CursorPos X="154" Y="426"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="version_info.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="201"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="unused.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form9"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unused"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="146"/>
+        <CursorPos Y="291"/>
+        <UsageCount Value="203"/>
+        <Loaded Value="True"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="mess.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form10"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="37"/>
+        <CursorPos X="2" Y="45"/>
+        <UsageCount Value="200"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="web_ticket.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormWT"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="615"/>
+        <CursorPos X="15" Y="632"/>
+        <UsageCount Value="201"/>
+        <Loaded Value="True"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="auth.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormAuth"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Auth"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="92"/>
+        <CursorPos X="29" Y="97"/>
+        <UsageCount Value="202"/>
+        <Loaded Value="True"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="/usr/share/fpcsrc/rtl/objpas/strutils.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="41"/>
+        <CursorPos X="10" Y="57"/>
+        <UsageCount Value="9"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="ffind.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form11"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="244"/>
+        <CursorPos X="55" Y="253"/>
+        <UsageCount Value="212"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="../platdisp_win/platproc.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1872"/>
+        <CursorPos X="15" Y="1886"/>
+        <UsageCount Value="73"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="../../egor/lazarus164/lazarus/lcl/include/wincontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="5771"/>
+        <CursorPos Y="5785"/>
+        <UsageCount Value="2"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="backup/maindisp.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="723"/>
+        <CursorPos X="14" Y="743"/>
+        <UsageCount Value="10"/>
+      </Unit25>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="maindisp.pas"/>
+      </Position1>
+      <Position2>
+        <Filename Value="maindisp.pas"/>
+        <Caret Line="827" Column="59" TopLine="803"/>
+      </Position2>
+      <Position3>
+        <Filename Value="bron_main.pas"/>
+        <Caret Line="5" Column="67"/>
+      </Position3>
+      <Position4>
+        <Filename Value="bron_main.pas"/>
+        <Caret Line="79" Column="32" TopLine="55"/>
+      </Position4>
+      <Position5>
+        <Filename Value="bron_main.pas"/>
+        <Caret Line="168" Column="36" TopLine="144"/>
+      </Position5>
+      <Position6>
+        <Filename Value="bron_main.pas"/>
+        <Caret Line="229" Column="71" TopLine="217"/>
+      </Position6>
+      <Position7>
+        <Filename Value="bron_main.pas"/>
+        <Caret Line="340" Column="40" TopLine="325"/>
+      </Position7>
+      <Position8>
+        <Filename Value="bron_main.pas"/>
+        <Caret Line="495" Column="41" TopLine="472"/>
+      </Position8>
+      <Position9>
+        <Filename Value="bron_main.pas"/>
+        <Caret Line="622" Column="43" TopLine="598"/>
+      </Position9>
+      <Position10>
+        <Filename Value="bron_main.pas"/>
+        <Caret Line="780" Column="44" TopLine="756"/>
+      </Position10>
+      <Position11>
+        <Filename Value="bron_main.pas"/>
+        <Caret Line="836" Column="46" TopLine="812"/>
+      </Position11>
+      <Position12>
+        <Filename Value="bron_main.pas"/>
+        <Caret Line="985" Column="46" TopLine="961"/>
+      </Position12>
+      <Position13>
+        <Filename Value="bron_main.pas"/>
+        <Caret Line="1875" Column="35" TopLine="1851"/>
+      </Position13>
+      <Position14>
+        <Filename Value="bron_main.pas"/>
+        <Caret Line="80" Column="16" TopLine="65"/>
+      </Position14>
+      <Position15>
+        <Filename Value="bron_main.pas"/>
+        <Caret Line="168" Column="36" TopLine="144"/>
+      </Position15>
+      <Position16>
+        <Filename Value="bron_main.pas"/>
+        <Caret Line="229" Column="71" TopLine="205"/>
+      </Position16>
+      <Position17>
+        <Filename Value="maindisp.pas"/>
+        <Caret Line="1230" Column="17" TopLine="1208"/>
+      </Position17>
+      <Position18>
+        <Filename Value="maindisp.pas"/>
+        <Caret Line="2963" Column="45" TopLine="2947"/>
+      </Position18>
+      <Position19>
+        <Filename Value="maindisp.pas"/>
+        <Caret Line="6242" Column="34" TopLine="6242"/>
+      </Position19>
+      <Position20>
+        <Filename Value="maindisp.pas"/>
+        <Caret Line="6499" Column="68" TopLine="6463"/>
+      </Position20>
+      <Position21>
+        <Filename Value="maindisp.pas"/>
+      </Position21>
+      <Position22>
+        <Filename Value="rserver.pas"/>
+        <Caret Line="114" Column="35" TopLine="101"/>
+      </Position22>
+      <Position23>
+        <Filename Value="rserver.pas"/>
+        <Caret Line="241" Column="57" TopLine="226"/>
+      </Position23>
+      <Position24>
+        <Filename Value="bron_main.pas"/>
+        <Caret Line="327" Column="44" TopLine="316"/>
+      </Position24>
+      <Position25>
+        <Filename Value="maindisp.pas"/>
+        <Caret Line="6244" Column="57" TopLine="6228"/>
+      </Position25>
+      <Position26>
+        <Filename Value="bron_main.pas"/>
+        <Caret Line="327" Column="151" TopLine="307"/>
+      </Position26>
+      <Position27>
+        <Filename Value="bron_main.pas"/>
+        <Caret Line="1921" Column="15" TopLine="1915"/>
+      </Position27>
+      <Position28>
+        <Filename Value="maindisp.pas"/>
+        <Caret Line="2696" Column="64" TopLine="2684"/>
+      </Position28>
+      <Position29>
+        <Filename Value="sostav_main.pas"/>
+        <Caret Line="275" Column="66" TopLine="258"/>
+      </Position29>
+      <Position30>
+        <Filename Value="sostav_main.pas"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <Target>
+      <Filename Value="platdisp"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Linking>
+      <Debugging>
+        <UseExternalDbgSyms Value="True"/>
+      </Debugging>
+    </Linking>
+    <Other>
+      <Verbosity>
+        <ShowWarn Value="False"/>
+        <ShowNotes Value="False"/>
+        <ShowHints Value="False"/>
+      </Verbosity>
+      <CompilerMessages>
+        <IgnoredMessages idx2031="True"/>
+      </CompilerMessages>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Watches Count="11">
+      <Item1>
+        <Expression Value="unused_critical_time"/>
+      </Item1>
+      <Item2>
+        <Expression Value="company_name"/>
+      </Item2>
+      <Item3>
+        <Expression Value="company_inn"/>
+      </Item3>
+      <Item4>
+        <Expression Value="LPTonly"/>
+      </Item4>
+      <Item5>
+        <Expression Value="webtick1"/>
+      </Item5>
+      <Item6>
+        <Expression Value="webtick2"/>
+      </Item6>
+      <Item7>
+        <Expression Value="webtick3"/>
+      </Item7>
+      <Item8>
+        <Expression Value="webtick4"/>
+      </Item8>
+      <Item9>
+        <Expression Value="max_transaction_time"/>
+      </Item9>
+      <Item10>
+        <Expression Value="unused_critical_time"/>
+      </Item10>
+      <Item11>
+        <Expression Value="doobil_min"/>
+      </Item11>
+    </Watches>
+    <Exceptions Count="6">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+      <Item4>
+        <Name Value="EConvertError"/>
+      </Item4>
+      <Item5>
+        <Name Value="EGridException"/>
+      </Item5>
+      <Item6>
+        <Name Value="EZSQLException"/>
+      </Item6>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

@@ -1,0 +1,105 @@
+object FormMenu: TFormMenu
+  Left = 790
+  Height = 464
+  Top = 232
+  Width = 354
+  ActiveControl = StringGrid3
+  BorderIcons = []
+  BorderStyle = bsNone
+  Caption = 'Операции диспетчера'
+  ClientHeight = 464
+  ClientWidth = 354
+  Font.Style = [fsBold]
+  KeyPreview = True
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  OnPaint = FormPaint
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '1.6.4.0'
+  object StringGrid3: TStringGrid
+    Left = 8
+    Height = 396
+    Top = 16
+    Width = 233
+    Color = clCream
+    ColCount = 3
+    DefaultRowHeight = 38
+    FixedColor = clNone
+    FixedCols = 0
+    FixedRows = 0
+    Font.Height = -19
+    Font.Quality = fqCleartypeNatural
+    HeaderHotZones = [gzFixedCols, gzInvalid]
+    Options = [goHorzLine, goRowSelect, goSmoothScroll]
+    ParentFont = False
+    RowCount = 1
+    ScrollBars = ssNone
+    TabOrder = 0
+    TitleFont.Height = -19
+    TitleFont.Quality = fqCleartypeNatural
+    OnDrawCell = StringGrid3DrawCell
+    OnSelection = StringGrid3Selection
+    ColWidths = (
+      6
+      335
+      1
+    )
+  end
+  object StringGrid4: TStringGrid
+    Left = 32
+    Height = 396
+    Top = 44
+    Width = 233
+    Color = clCream
+    ColCount = 3
+    DefaultRowHeight = 38
+    FixedColor = clNone
+    FixedCols = 0
+    FixedRows = 0
+    Font.Height = -19
+    Font.Quality = fqCleartypeNatural
+    HeaderHotZones = [gzFixedCols, gzInvalid]
+    Options = [goHorzLine, goRowSelect, goSmoothScroll]
+    ParentFont = False
+    RowCount = 1
+    ScrollBars = ssNone
+    TabOrder = 1
+    TitleFont.Height = -19
+    TitleFont.Quality = fqCleartypeNatural
+    Visible = False
+    OnDrawCell = StringGrid4DrawCell
+    OnKeyDown = FormKeyDown
+    ColWidths = (
+      6
+      335
+      1
+    )
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = False
+    Properties.Strings = (
+      'AutoEncodeStrings='
+    )
+    TransactIsolationLevel = tiReadCommitted
+    Port = 0
+    Protocol = 'postgresql'
+    left = 288
+    top = 48
+  end
+  object ZReadOnlyQuery1: TZReadOnlyQuery
+    Connection = ZConnection1
+    ParamCheck = False
+    Params = <>
+    left = 292
+    top = 121
+  end
+  object ZReadOnlyQuery2: TZReadOnlyQuery
+    Connection = ZConnection1
+    ParamCheck = False
+    Params = <>
+    left = 276
+    top = 190
+  end
+end

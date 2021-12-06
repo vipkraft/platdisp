@@ -1,0 +1,186 @@
+object FormV: TFormV
+  Left = 318
+  Height = 768
+  Top = 175
+  Width = 1024
+  ActiveControl = Panel1
+  BorderIcons = []
+  Caption = 'Просмотр и печать посадочной ведомости'
+  ClientHeight = 768
+  ClientWidth = 1024
+  Font.Color = 6815744
+  KeyPreview = True
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '1.6.4.0'
+  object Memo1: TMemo
+    Left = 2
+    Height = 734
+    Top = 2
+    Width = 1020
+    Font.Height = -12
+    Font.Name = 'Courier'
+    Font.Pitch = fpFixed
+    Lines.Strings = (
+      'пакараррурыкерыкерыерыкеrывпвалджполдфыоппрлдварполварполдрфволдпрфваолдпролвдарполдварплодфврполфврплдвфрплдфврплрукшрукшкпрукшпрукшкпук'
+    )
+    ParentFont = False
+    ReadOnly = True
+    ScrollBars = ssAutoBoth
+    TabOrder = 0
+    WordWrap = False
+  end
+  object Panel1: TPanel
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = Owner
+    AnchorSideTop.Side = asrCenter
+    Left = 340
+    Height = 331
+    Top = 219
+    Width = 345
+    BorderWidth = 3
+    BorderStyle = bsSingle
+    ClientHeight = 329
+    ClientWidth = 343
+    Color = clMenuBar
+    ParentColor = False
+    ParentShowHint = False
+    TabOrder = 1
+    Visible = False
+    object Label1: TLabel
+      AnchorSideLeft.Control = Panel1
+      AnchorSideLeft.Side = asrCenter
+      AnchorSideTop.Control = Label2
+      AnchorSideTop.Side = asrBottom
+      Left = 91
+      Height = 25
+      Top = 197
+      Width = 160
+      BorderSpacing.Top = 20
+      Caption = 'Тип: матричный'
+      Font.Color = 6815744
+      Font.Height = -21
+      ParentColor = False
+      ParentFont = False
+      ParentShowHint = False
+    end
+    object Label2: TLabel
+      AnchorSideLeft.Control = Panel1
+      AnchorSideLeft.Side = asrCenter
+      AnchorSideTop.Control = Panel1
+      AnchorSideTop.Side = asrCenter
+      Left = 43
+      Height = 25
+      Top = 152
+      Width = 257
+      BorderSpacing.Top = 35
+      Caption = 'Идет печать, подождите ...'
+      Font.Color = 6815744
+      Font.Height = -21
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+  object Label43: TLabel
+    Left = 8
+    Height = 18
+    Top = 744
+    Width = 601
+    Caption = '  [ПРОБЕЛ]  - ПЕЧАТЬ ВЕДОМОСТИ            [ESC/ENTER]   - ЗАКРЫТЬ ОКНО ВЕДОМОСТИ '
+    ParentColor = False
+  end
+  object Panel2: TPanel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideTop.Side = asrCenter
+    Left = 0
+    Height = 331
+    Top = 219
+    Width = 345
+    BorderWidth = 3
+    BorderStyle = bsSingle
+    ClientHeight = 329
+    ClientWidth = 343
+    Color = clMenuBar
+    Font.Color = 6815744
+    Font.Height = -21
+    ParentColor = False
+    ParentFont = False
+    ParentShowHint = False
+    TabOrder = 2
+    Visible = False
+    object Label3: TLabel
+      AnchorSideLeft.Control = Panel2
+      AnchorSideLeft.Side = asrCenter
+      AnchorSideTop.Control = Panel2
+      Left = 27
+      Height = 25
+      Top = 14
+      Width = 289
+      BorderSpacing.Top = 10
+      Caption = 'Выберите принтер из списка:'
+      ParentColor = False
+    end
+    object Label4: TLabel
+      AnchorSideLeft.Control = Panel2
+      AnchorSideLeft.Side = asrCenter
+      AnchorSideTop.Control = Panel2
+      AnchorSideTop.Side = asrCenter
+      AnchorSideBottom.Control = Panel2
+      AnchorSideBottom.Side = asrBottom
+      Left = 34
+      Height = 25
+      Top = 255
+      Width = 275
+      Anchors = [akLeft, akBottom]
+      BorderSpacing.Top = 35
+      BorderSpacing.Bottom = 45
+      Caption = 'нажмите [ENTER] для печати'
+      ParentColor = False
+      ParentShowHint = False
+      Visible = False
+    end
+    object BitBtn1: TBitBtn
+      AnchorSideLeft.Control = Panel2
+      AnchorSideRight.Control = Panel2
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = Panel2
+      AnchorSideBottom.Side = asrBottom
+      Left = 24
+      Height = 34
+      Hint = 'нажмите ENTER для печати'
+      Top = 288
+      Width = 295
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      BorderSpacing.Left = 20
+      BorderSpacing.Right = 20
+      BorderSpacing.Bottom = 3
+      Caption = 'ПЕЧАТЬ'
+      OnClick = BitBtn1Click
+      ParentBidiMode = False
+      TabOrder = 0
+    end
+    object ListBox1: TListBox
+      AnchorSideLeft.Control = Panel2
+      AnchorSideTop.Control = Label3
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = Panel2
+      AnchorSideRight.Side = asrBottom
+      Left = 9
+      Height = 200
+      Top = 47
+      Width = 325
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Left = 5
+      BorderSpacing.Top = 8
+      BorderSpacing.Right = 5
+      ItemHeight = 0
+      ScrollWidth = 323
+      TabOrder = 1
+      TopIndex = -1
+    end
+  end
+end

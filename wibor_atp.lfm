@@ -1,0 +1,116 @@
+object Form3: TForm3
+  Left = 509
+  Height = 535
+  Top = 207
+  Width = 660
+  ActiveControl = StringGrid1
+  BorderIcons = []
+  BorderStyle = bsNone
+  Caption = 'Выбор ПЕРЕВОЗЧИКА из списка'
+  ClientHeight = 535
+  ClientWidth = 660
+  KeyPreview = True
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  OnPaint = FormPaint
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '1.6.0.4'
+  object StringGrid1: TStringGrid
+    AnchorSideLeft.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 2
+    Height = 458
+    Top = 31
+    Width = 657
+    Align = alTop
+    Anchors = [akLeft, akRight]
+    BorderSpacing.Left = 2
+    BorderSpacing.Right = 1
+    ColCount = 3
+    ColumnClickSorts = True
+    DefaultRowHeight = 34
+    FixedCols = 0
+    Font.Height = -19
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRowSelect, goSmoothScroll]
+    ParentFont = False
+    RowCount = 1
+    ScrollBars = ssVertical
+    TabOrder = 0
+    TitleFont.Height = -16
+    ColWidths = (
+      87
+      543
+      2
+    )
+    Cells = (
+      2
+      0
+      0
+      '№ '
+      1
+      0
+      'Наименование '
+    )
+  end
+  object Label1: TLabel
+    AnchorSideTop.Control = Owner
+    Left = 0
+    Height = 26
+    Top = 5
+    Width = 660
+    Align = alTop
+    Alignment = taCenter
+    Anchors = [akTop]
+    AutoSize = False
+    BorderSpacing.Top = 5
+    Caption = 'Выбор перевозчика из списка'
+    Font.Height = -21
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label43: TLabel
+    Left = 0
+    Height = 38
+    Top = 489
+    Width = 660
+    Align = alTop
+    Caption = '------------------------------------------------------------------Информация-------------------------------------------------------------------------------------------------------------'#10'            ESC - Отмена , ENTER - Выбор  '
+    Font.Color = clBlue
+    Font.Height = -16
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit1: TEdit
+    Left = 168
+    Height = 35
+    Top = 472
+    Width = 466
+    AutoSize = False
+    AutoSelect = False
+    Font.Color = clTeal
+    Font.Height = -21
+    MaxLength = 30
+    OnChange = Edit1Change
+    ParentFont = False
+    TabOrder = 1
+    Visible = False
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = False
+    TransactIsolationLevel = tiReadCommitted
+    Port = 0
+    Protocol = 'postgresql'
+    left = 417
+    top = 6
+  end
+  object ZReadOnlyQuery1: TZReadOnlyQuery
+    Connection = ZConnection1
+    ParamCheck = False
+    Params = <>
+    left = 534
+    top = 31
+  end
+end

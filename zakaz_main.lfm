@@ -1,0 +1,1562 @@
+object Form2: TForm2
+  Left = 235
+  Height = 768
+  Top = 165
+  Width = 1024
+  ActiveControl = Edit6
+  BorderIcons = []
+  BorderStyle = bsNone
+  Caption = 'Данные рейса'
+  ClientHeight = 768
+  ClientWidth = 1024
+  Color = 15198183
+  KeyPreview = True
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  OnPaint = FormPaint
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '1.6.4.0'
+  object Shape1: TShape
+    Left = 440
+    Height = 40
+    Top = 93
+    Width = 292
+    Brush.Color = clDefault
+    Pen.Style = psClear
+  end
+  object Bevel1: TBevel
+    Left = 24
+    Height = 41
+    Top = 628
+    Width = 626
+    Style = bsRaised
+    Visible = False
+  end
+  object Label36: TLabel
+    Left = 5
+    Height = 28
+    Top = 26
+    Width = 1014
+    Align = alTop
+    Alignment = taCenter
+    AutoSize = False
+    BorderSpacing.Left = 5
+    BorderSpacing.Top = 4
+    BorderSpacing.Right = 5
+    Caption = 'Создание заказного рейса на 01.01.2012'
+    Font.Color = clBlack
+    Font.Height = -19
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label37: TLabel
+    Left = 0
+    Height = 27
+    Top = 54
+    Width = 1024
+    Align = alTop
+    Alignment = taCenter
+    Anchors = [akLeft, akRight]
+    AutoSize = False
+    Caption = '[123] Ставрополь АВ - Москва'
+    Font.Color = clBlack
+    Font.Height = -21
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit1: TEdit
+    Left = 137
+    Height = 32
+    Top = 542
+    Width = 448
+    Color = clCream
+    Font.Height = -19
+    OnEnter = AnyEditEnter
+    OnExit = AnyEditExit
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 7
+  end
+  object Image5: TImage
+    Left = 5
+    Height = 13
+    Top = 50
+    Width = 22
+    Picture.Data = {
+      1754506F727461626C654E6574776F726B47726170686963F304000089504E47
+      0D0A1A0A0000000D4948445200000040000000400806000000AA6971DE000000
+      0467414D410000AFC837058AE90000001974455874536F667477617265004164
+      6F626520496D616765526561647971C9653C000004854944415478DAEC9BED4B
+      14411CC77F33BB5E7A599A5110154805FD05D1AB207A11BD88849EA0C87AAD2F
+      82DEF42AE8B92008A24809C4872EAA8BA43409097BC0128B1E894A7AB02CABEB
+      C1CA2CF59EF6A6999D9D7395D4BBDB9DF5A299636E766767D7DFF7B30F373B7E
+      071142C0492A092C80894C0DA5AF1CED8F25C5554133713957C8081439BD027E
+      0C760F3F20FD6C39BF9454ADBE0CF14404104256BDF8E26D44A5D88A10AF37DB
+      2364B5E1EB1AF2C1A6B3CBE0ECC676738B3818FB4CC2458EE2D7655D9A0F4341
+      E8F87A890BC008300B1D73A16C19236C6EC3B4CEAF1700D234D0B146DBEA34D3
+      52D3691B1D745ACEF62F817C5F01E469335C8F531A80A75F1AE167B8DB142800
+      608C92A219005167907EC00603C0056B14864672E899CF019DE8100AB74B7B86
+      60F8CF9302A00028000A8002A00028000A8002A00028000A8002A00028000A80
+      02A00028000A8002A00028000A8002A00028000AC07F9146FDF7784960017364
+      946553B034A64CDD1C950DA5AFCAD302C0C457AC6A82B811B539394CF3062FAD
+      AFA4FFC3D6A667A0139A9E6F774D782CD10F874B8E815F9B65394ED0B072C84D
+      22224336678A0EEB038BD9894C1B406579E3CAB24533E7415FE4936555016E72
+      C0DCE5A15925737E60BAAC99EE160411A30F62E4571288D3642406A0A3AF1A7C
+      B8D0748E30E304664E12E622C1DC49C2B366AD6BA601434753607B70BFA965B4
+      638FE91112B7C174FD1B154692009858EEFC80A4CBC30460738260DBB6F11C22
+      937D45B41CE110D12C87085BC7397C1D0F659CACD393EB182C0016949DC16A08
+      C70746BDFCC77D085A3B567E8B4FA781FF4BCF4B9492F8947E050484AFD1A27F
+      040282DDE76A53129FF2CFA080F02992ED1010EC397F8A8A1F4C497C5AFD0001
+      E1E3E0B42C8580606FFD1988A4213EED8E9080F0BE3FDB2020D85F1F84A8114E
+      4B7C463D4101E1DDAFC22C8180E0C0857A2A3E92B6F88CBBC202C29B9F130D01
+      C1C18B172166443312EFE85D4040E8EC2D982008080E3536D14E523C63F18E5F
+      86048497DFA77A0A81757D0F37353B16EFCADB60F59A1613C2F31E6F2098E22F
+      5F0583188EC5BB0280F5BBABD75C35213CFB32452A04F66E71A4B915122E8977
+      6D3C80F5EB0584279FF3A5404040E0E8957657C5BB3A20C220D458101E8726BB
+      0C81C0F196FB4048C255F1AE8F0831D1356B3984471FDC8240E0C4F5C752C44B
+      191263AFA402C283F77E87100854DD78264DBCB43141F660ACB520DC7B9747EF
+      DF0CFE0C21507BF3054540A489970680DF0E4310EEBCCD4D0B021BA409B4BD91
+      2E5E2A809110DABB26A504815EEE70FA76B727E2A50310B743DD3A0EA1EDB56F
+      4C08841810BC1B628B9E88F70400FF0D1F8270AB33E7AF1098F8FA073D9E8AF7
+      0C80B81DEAD65D3321B4BED48741A07D7A6878D4EBB978332E193347EDE3E16C
+      B1306F2E9BF19827EA565414EFF3E56BA5CB16127354B8A50320FADB08349777
+      EDB01DCAE88F853EC088317FB7678E222F264F376EEE9C430BBFBD6EF9D1E25D
+      B985DA06B61CEE35CE5CD9DAB56BC46E895527E78F3B33DAE9E469DDA32BED37
+      CD317B0515BC8D16DBC6D8C7F022304F00D033D90B599AFE0830006FACBCB5C9
+      4373260000000049454E44AE426082
+    }
+    Stretch = True
+    Visible = False
+  end
+  object Image6: TImage
+    Left = 5
+    Height = 15
+    Top = 32
+    Width = 22
+    Picture.Data = {
+      1754506F727461626C654E6574776F726B47726170686963A804000089504E47
+      0D0A1A0A0000000D4948445200000040000000400806000000AA6971DE000000
+      0467414D410000AFC837058AE90000001974455874536F667477617265004164
+      6F626520496D616765526561647971C9653C0000043A4944415478DAEC9BDB53
+      13571CC7BF39093A32653ADA71A633CEF4451F7DE89F50DEEAA5A8D55215A3F6
+      A9034F1DC75715C5FAE4956AB0B5D64B26014AA4502B20838A38FAA222C8D041
+      93700B294E1C2EB9684CC2667B96EC928D0E90642F21ED39C92F673793FC723E
+      9FFDED994C4ED6C0F33C94B42DD675C8656B36BB14BD9FE470EC161ABC18965C
+      0DC2A0B402A6C29ED484F426DC93FBC90D69DBFCFB170270F9951DADB3FBDF39
+      36085D8D6D675785988176623FFB681076C5EC52A2C4F672B22ABF0448F0355B
+      EBD1EBBB86026321D6AF2EC5F78DA5B312684957E85901BA9E0272F82ECF09BC
+      9CB885517F171E8F9FC7CF5F37082F29A7738AE53F2960AF086FD95A87CED1E3
+      180F3EA3277F9C068FC9B013DD3E0B7ED9EED05D822E02F636C8E0877F9C8397
+      9AB02D48E8F15DC4A5ED37749540F482BFB0A50EF7868EE39F60770A7C8A8477
+      4E3C9FB8845F7734EA26415301FB52E0ABE6854F4AE0E9A4EA44DFC4655CFEE6
+      0F5D2410ADE1CF97D4E2CEE03178030BC3CB2B612AE242FFE4552AA149730944
+      6BF88EC1AAB4E1E512A6A32E0C4C5BF15B69B3A6125417B0CF9180FF89C2B7BB
+      8E612CF03423F8140911375EFAEDB852FAA766125415B0DF519C80FF8AC23B8F
+      26E0F978D6F9A44A7006EB71F5DB9B9A48205AC0B751788F4278F9C4E88FBAE1
+      0EDDC0B59D2DAA4B206AC25753F8961795F0F8D581974B08C45CA28456552510
+      B5E0CF6DB6A365E088EAF07209C1D81086C34DB8BEAB4D35098A0488039885BF
+      355049BFD76B03FFBE8491F05FB0EEBAAD8A04A214FEEC263B6EFE5D8991E927
+      9AC2CB2584668630FAAE05D6DDED8A2510E5F04774834F4A0082DC08BC91DBB0
+      EDEE502481640B7F86C237F71FC6F094BEF0720D8284B1583BEC6577B29640B2
+      82DF6847535F2EE19312DE701E78631D54C2BDAC24904CE14F53F8C6BE4318CA
+      397C52C2DBF818C6B9BBA82DEBCC5802C9087E830D8DBD147E72A9C0CB2A21EE
+      C5AB78276AF7DCCF48024917FE148577F41EC6E09283975782173EEE3EEAF674
+      A52D81A40BDFD043E1271E2F51F8647B8B71F8F807A833A727812C067FF24B1B
+      EABB0FC19D07F0522584F957781D7F847AF38345252C540179082F9330570989
+      3961BE579A16C85273B0AD4C7CE327190FE1F3356FC4AF2CCA9BB0D650DDFE50
+      498A9A8C05880B148B2E5278FDCF21AD7A488B20E5CDDBF8E5C62244B9802A02
+      4CA4501A9341ED5A31294D50B86CE507474B682B0A3E565D405EFC24966F8D09
+      6002980026800960029800268009600298002680096002980026800960029800
+      268009600298002680096002980026E07FD14C6A245955F89920B28886518892
+      EB6B551DA47471A7C160F894769C1821FA7C34E702F63B8AA54A3289618C8638
+      6BA77BCA0C7C944686D7697D4E24C0D968B78CC68CF87946E1C26DA5174F9B54
+      3A48C21F88223462C2E0DA2A867FA0FD01B122C83C6190052F8BF83CC1BDB73F
+      B3644E015AF2C28042F93807FC2BC00050975B8D0A838E0C0000000049454E44
+      AE426082
+    }
+    Stretch = True
+    Visible = False
+  end
+  object Label38: TLabel
+    Left = 24
+    Height = 19
+    Top = 545
+    Width = 94
+    Caption = 'Перевозчик:'
+    Font.Color = clBlack
+    Font.Height = -16
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label39: TLabel
+    Left = 24
+    Height = 19
+    Top = 587
+    Width = 63
+    Caption = 'Автобус:'
+    Font.Color = clBlack
+    Font.Height = -16
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label40: TLabel
+    Left = 24
+    Height = 19
+    Top = 501
+    Width = 156
+    Caption = 'Время отправления:'
+    Font.Color = clBlack
+    Font.Height = -16
+    ParentColor = False
+    ParentFont = False
+  end
+  object DateTimePicker1: TDateTimePicker
+    Left = 201
+    Height = 31
+    Top = 494
+    Width = 75
+    ArrowShape = asModernLarger
+    CenturyFrom = 1941
+    DateDisplayOrder = ddoDMY
+    MaxDate = 2958465
+    MinDate = -53780
+    Font.Height = -21
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 6
+    Enabled = False
+    TrailingSeparator = False
+    TextForNullDate = 'NULL'
+    LeadingZeros = True
+    Kind = dtkTime
+    TimeFormat = tf24
+    TimeDisplay = tdHM
+    DateMode = dmUpDown
+    Date = 40961
+    Time = 0.412619756942149
+    UseDefaultSeparators = True
+    HideDateTimeParts = []
+    MonthNames = 'Long'
+    OnChange = DateTimePicker1Change
+  end
+  object Label42: TLabel
+    Left = 14
+    Height = 19
+    Top = 103
+    Width = 137
+    Caption = '№ путевого листа:'
+    Font.Color = clBlack
+    Font.Height = -16
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit6: TEdit
+    Left = 168
+    Height = 32
+    Top = 98
+    Width = 248
+    CharCase = ecUppercase
+    Color = clCream
+    Font.Height = -19
+    OnEnter = AnyEditEnter
+    OnExit = AnyEditExit
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Label43: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 0
+    Height = 54
+    Top = 707
+    Width = 1024
+    Anchors = [akLeft, akRight, akBottom]
+    BorderSpacing.Bottom = 7
+    Caption = '------------------------------------------------------------------------------------------  Информация  ---------------------------------------------------------------------------------------'#10'      [F1]    - Помощь                                                 [F3]    - Выбор Перевозчика/Автобуса для заказного рейса'#10'      [F10]  - Сохранить реквизиты рейса                [F12]  - Подтвердить операцию                              [ESC] - Отмена/Выход '
+    Font.Color = clBlue
+    Font.Height = -15
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit7: TEdit
+    Left = 137
+    Height = 32
+    Top = 582
+    Width = 448
+    Color = clCream
+    Font.Height = -19
+    OnEnter = AnyEditEnter
+    OnExit = AnyEditExit
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 9
+  end
+  object Image7: TImage
+    Left = 5
+    Height = 15
+    Top = 74
+    Width = 22
+    Picture.Data = {
+      1754506F727461626C654E6574776F726B47726170686963A804000089504E47
+      0D0A1A0A0000000D4948445200000040000000400806000000AA6971DE000000
+      0467414D410000AFC837058AE90000001974455874536F667477617265004164
+      6F626520496D616765526561647971C9653C0000043A4944415478DAEC9BDB53
+      13571CC7BF39093A32653ADA71A633CEF4451F7DE89F50DEEAA5A8D55215A3F6
+      A9034F1DC75715C5FAE4956AB0B5D64B26014AA4502B20838A38FAA222C8D041
+      93700B294E1C2EB9684CC2667B96EC928D0E90642F21ED39C92F673793FC723E
+      9FFDED994C4ED6C0F33C94B42DD675C8656B36BB14BD9FE470EC161ABC18965C
+      0DC2A0B402A6C29ED484F426DC93FBC90D69DBFCFB170270F9951DADB3FBDF39
+      36085D8D6D675785988176623FFB681076C5EC52A2C4F672B22ABF0448F0355B
+      EBD1EBBB86026321D6AF2EC5F78DA5B312684957E85901BA9E0272F82ECF09BC
+      9CB885517F171E8F9FC7CF5F37082F29A7738AE53F2960AF086FD95A87CED1E3
+      180F3EA3277F9C068FC9B013DD3E0B7ED9EED05D822E02F636C8E0877F9C8397
+      9AB02D48E8F15DC4A5ED37749540F482BFB0A50EF7868EE39F60770A7C8A8477
+      4E3C9FB8845F7734EA26415301FB52E0ABE6854F4AE0E9A4EA44DFC4655CFEE6
+      0F5D2410ADE1CF97D4E2CEE03178030BC3CB2B612AE242FFE4552AA149730944
+      6BF88EC1AAB4E1E512A6A32E0C4C5BF15B69B3A6125417B0CF9180FF89C2B7BB
+      8E612CF03423F8140911375EFAEDB852FAA766125415B0DF519C80FF8AC23B8F
+      26E0F978D6F9A44A7006EB71F5DB9B9A48205AC0B751788F4278F9C4E88FBAE1
+      0EDDC0B59D2DAA4B206AC25753F8961795F0F8D581974B08C45CA28456552510
+      B5E0CF6DB6A365E088EAF07209C1D81086C34DB8BEAB4D35098A0488039885BF
+      355049BFD76B03FFBE8491F05FB0EEBAAD8A04A214FEEC263B6EFE5D8991E927
+      9AC2CB2584668630FAAE05D6DDED8A2510E5F04774834F4A0082DC08BC91DBB0
+      EDEE502481640B7F86C237F71FC6F094BEF0720D8284B1583BEC6577B29640B2
+      82DF6847535F2EE19312DE701E78631D54C2BDAC24904CE14F53F8C6BE4318CA
+      397C52C2DBF818C6B9BBA82DEBCC5802C9087E830D8DBD147E72A9C0CB2A21EE
+      C5AB78276AF7DCCF48024917FE148577F41EC6E09283975782173EEE3EEAF674
+      A52D81A40BDFD043E1271E2F51F8647B8B71F8F807A833A727812C067FF24B1B
+      EABB0FC19D07F0522584F957781D7F847AF38345252C540179082F9330570989
+      3961BE579A16C85273B0AD4C7CE327190FE1F3356FC4AF2CCA9BB0D650DDFE50
+      498A9A8C05880B148B2E5278FDCF21AD7A488B20E5CDDBF8E5C62244B9802A02
+      4CA4501A9341ED5A31294D50B86CE507474B682B0A3E565D405EFC24966F8D09
+      6002980026800960029800268009600298002680096002980026800960029800
+      268009600298002680096002980026E07FD14C6A245955F89920B28886518892
+      EB6B551DA47471A7C160F894769C1821FA7C34E702F63B8AA54A3289618C8638
+      6BA77BCA0C7C944686D7697D4E24C0D968B78CC68CF87946E1C26DA5174F9B54
+      3A48C21F88223462C2E0DA2A867FA0FD01B122C83C6190052F8BF83CC1BDB73F
+      B3644E015AF2C28042F93807FC2BC00050975B8D0A838E0C0000000049454E44
+      AE426082
+    }
+    Stretch = True
+    Visible = False
+  end
+  object Image8: TImage
+    Left = 5
+    Height = 13
+    Top = 93
+    Width = 22
+    Picture.Data = {
+      1754506F727461626C654E6574776F726B47726170686963F304000089504E47
+      0D0A1A0A0000000D4948445200000040000000400806000000AA6971DE000000
+      0467414D410000AFC837058AE90000001974455874536F667477617265004164
+      6F626520496D616765526561647971C9653C000004854944415478DAEC9BED4B
+      14411CC77F33BB5E7A599A5110154805FD05D1AB207A11BD88849EA0C87AAD2F
+      82DEF42AE8B92008A24809C4872EAA8BA43409097BC0128B1E894A7AB02CABEB
+      C1CA2CF59EF6A6999D9D7395D4BBDB9DF5A299636E766767D7DFF7B30F373B7E
+      071142C0492A092C80894C0DA5AF1CED8F25C5554133713957C8081439BD027E
+      0C760F3F20FD6C39BF9454ADBE0CF14404104256BDF8E26D44A5D88A10AF37DB
+      2364B5E1EB1AF2C1A6B3CBE0ECC676738B3818FB4CC2458EE2D7655D9A0F4341
+      E8F87A890BC008300B1D73A16C19236C6EC3B4CEAF1700D234D0B146DBEA34D3
+      52D3691B1D745ACEF62F817C5F01E469335C8F531A80A75F1AE167B8DB142800
+      608C92A219005167907EC00603C0056B14864672E899CF019DE8100AB74B7B86
+      60F8CF9302A00028000A8002A00028000A8002A00028000A8002A00028000A80
+      02A00028000A8002A00028000A8002A00028000AC07F9146FDF7784960017364
+      946553B034A64CDD1C950DA5AFCAD302C0C457AC6A82B811B539394CF3062FAD
+      AFA4FFC3D6A667A0139A9E6F774D782CD10F874B8E815F9B65394ED0B072C84D
+      22224336678A0EEB038BD9894C1B406579E3CAB24533E7415FE4936555016E72
+      C0DCE5A15925737E60BAAC99EE160411A30F62E4571288D3642406A0A3AF1A7C
+      B8D0748E30E304664E12E622C1DC49C2B366AD6BA601434753607B70BFA965B4
+      638FE91112B7C174FD1B154692009858EEFC80A4CBC30460738260DBB6F11C22
+      937D45B41CE110D12C87085BC7397C1D0F659CACD393EB182C0016949DC16A08
+      C70746BDFCC77D085A3B567E8B4FA781FF4BCF4B9492F8947E050484AFD1A27F
+      040282DDE76A53129FF2CFA080F02992ED1010EC397F8A8A1F4C497C5AFD0001
+      E1E3E0B42C8580606FFD1988A4213EED8E9080F0BE3FDB2020D85F1F84A8114E
+      4B7C463D4101E1DDAFC22C8180E0C0857A2A3E92B6F88CBBC202C29B9F130D01
+      C1C18B172166443312EFE85D4040E8EC2D982008080E3536D14E523C63F18E5F
+      86048497DFA77A0A81757D0F37353B16EFCADB60F59A1613C2F31E6F2098E22F
+      5F0583188EC5BB0280F5BBABD75C35213CFB32452A04F66E71A4B915122E8977
+      6D3C80F5EB0584279FF3A5404040E0E8957657C5BB3A20C220D458101E8726BB
+      0C81C0F196FB4048C255F1AE8F0831D1356B3984471FDC8240E0C4F5C752C44B
+      191263AFA402C283F77E87100854DD78264DBCB43141F660ACB520DC7B9747EF
+      DF0CFE0C21507BF3054540A489970680DF0E4310EEBCCD4D0B021BA409B4BD91
+      2E5E2A809110DABB26A504815EEE70FA76B727E2A50310B743DD3A0EA1EDB56F
+      4C08841810BC1B628B9E88F70400FF0D1F8270AB33E7AF1098F8FA073D9E8AF7
+      0C80B81DEAD65D3321B4BED48741A07D7A6878D4EBB978332E193347EDE3E16C
+      B1306F2E9BF19827EA565414EFF3E56BA5CB16127354B8A50320FADB08349777
+      EDB01DCAE88F853EC088317FB7678E222F264F376EEE9C430BBFBD6EF9D1E25D
+      B985DA06B61CEE35CE5CD9DAB56BC46E895527E78F3B33DAE9E469DDA32BED37
+      CD317B0515BC8D16DBC6D8C7F022304F00D033D90B599AFE0830006FACBCB5C9
+      4373260000000049454E44AE426082
+    }
+    Stretch = True
+    Visible = False
+  end
+  object SpinEdit1: TSpinEdit
+    Left = 592
+    Height = 30
+    Top = 543
+    Width = 54
+    Font.Height = -17
+    ParentFont = False
+    ReadOnly = True
+    TabStop = False
+    TabOrder = 8
+  end
+  object Label1: TLabel
+    Left = 623
+    Height = 18
+    Top = 540
+    Width = 18
+    Caption = 'из'
+    Font.Height = -15
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 676
+    Height = 18
+    Top = 548
+    Width = 16
+    Caption = '50'
+    Font.Height = -15
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object SpinEdit2: TSpinEdit
+    Left = 592
+    Height = 30
+    Top = 582
+    Width = 55
+    Font.Height = -17
+    ParentFont = False
+    ReadOnly = True
+    TabStop = False
+    TabOrder = 10
+  end
+  object Label3: TLabel
+    Left = 653
+    Height = 18
+    Top = 548
+    Width = 18
+    Caption = 'из'
+    Font.Height = -15
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 676
+    Height = 18
+    Top = 587
+    Width = 16
+    Caption = '50'
+    Font.Height = -15
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit8: TEdit
+    Left = 264
+    Height = 30
+    Top = 680
+    Width = 480
+    AutoSelect = False
+    Font.Color = clTeal
+    Font.Height = -17
+    Font.Style = [fsBold]
+    MaxLength = 30
+    OnChange = Edit8Change
+    ParentFont = False
+    TabStop = False
+    TabOrder = 14
+    Visible = False
+  end
+  object Label49: TLabel
+    AnchorSideLeft.Side = asrBottom
+    Left = 0
+    Height = 22
+    Top = 0
+    Width = 1024
+    Align = alTop
+    Alignment = taCenter
+    BorderSpacing.Bottom = 2
+    Caption = 'вокзал'
+    Color = clRed
+    Font.Color = clWhite
+    Font.Height = -19
+    Font.Style = [fsBold]
+    ParentBidiMode = False
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+    Visible = False
+  end
+  object Label5: TLabel
+    AnchorSideLeft.Control = DateTimePicker1
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 286
+    Height = 39
+    Top = 495
+    Width = 737
+    Anchors = [akLeft, akRight]
+    AutoSize = False
+    BorderSpacing.Left = 10
+    BorderSpacing.Right = 1
+    Caption = 'УКАЖИТЕ ВРЕМЯ СОЗДАННОГО ЗАКАЗНОГО РЕЙСА ДЛЯ ПЕРЕНОСА БИЛЕТОВ ТУДА'
+    Font.Color = clMaroon
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Visible = False
+    WordWrap = True
+  end
+  object CheckBox1: TCheckBox
+    Left = 26
+    Height = 21
+    Top = 638
+    Width = 21
+    OnChange = CheckBox1Change
+    OnEnter = CheckBox1Enter
+    OnExit = CheckBox1Exit
+    TabOrder = 11
+  end
+  object Label6: TLabel
+    Left = 57
+    Height = 20
+    Top = 638
+    Width = 404
+    Caption = 'внести незаявленное транспортное средство...'
+    Font.Color = clNavy
+    Font.Height = -17
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    WordWrap = True
+  end
+  object Edit9: TEdit
+    Left = 118
+    Height = 31
+    Top = 633
+    Width = 264
+    AutoSize = False
+    Color = clCream
+    Font.Height = -19
+    ParentFont = False
+    TabOrder = 12
+    Visible = False
+  end
+  object Label50: TLabel
+    Left = 52
+    Height = 19
+    Top = 640
+    Width = 53
+    Caption = 'Марка:'
+    Font.Color = clBlack
+    Font.Height = -16
+    ParentColor = False
+    ParentFont = False
+    Visible = False
+  end
+  object Label51: TLabel
+    Left = 403
+    Height = 19
+    Top = 640
+    Width = 68
+    Caption = 'Рег.Знак:'
+    Font.Color = clBlack
+    Font.Height = -16
+    ParentColor = False
+    ParentFont = False
+    Visible = False
+  end
+  object Edit10: TEdit
+    Left = 489
+    Height = 31
+    Top = 633
+    Width = 146
+    AutoSize = False
+    Color = clCream
+    Font.Height = -19
+    ParentFont = False
+    TabOrder = 13
+    Visible = False
+  end
+  object Label52: TLabel
+    Left = 541
+    Height = 19
+    Top = 640
+    Width = 70
+    Caption = '[ПРОБЕЛ]'
+    Font.Color = clBlack
+    Font.Height = -16
+    ParentColor = False
+    ParentFont = False
+  end
+  object GroupBox1: TGroupBox
+    Left = 14
+    Height = 141
+    Top = 131
+    Width = 1002
+    Caption = 'ВОДИТЕЛЬ  № 1:'
+    ClientHeight = 121
+    ClientWidth = 998
+    TabOrder = 3
+    object Label41: TLabel
+      Left = 16
+      Height = 19
+      Top = 10
+      Width = 74
+      Caption = 'Фамилия:'
+      Font.Color = clBlack
+      Font.Height = -16
+      ParentColor = False
+      ParentFont = False
+    end
+    object Edit2: TEdit
+      Left = 104
+      Height = 32
+      Top = 6
+      Width = 251
+      CharCase = ecUppercase
+      Color = clCream
+      Font.Height = -19
+      OnEnter = AnyEditEnter
+      OnExit = AnyEditExit
+      OnKeyDown = Edit2KeyDown
+      OnKeyUp = Edit2KeyUp
+      ParentFont = False
+      TabOrder = 0
+    end
+    object Label53: TLabel
+      Left = 369
+      Height = 19
+      Top = 10
+      Width = 36
+      Caption = 'Имя:'
+      Font.Color = clBlack
+      Font.Height = -16
+      ParentColor = False
+      ParentFont = False
+    end
+    object Edit11: TEdit
+      Left = 413
+      Height = 32
+      Top = 6
+      Width = 244
+      CharCase = ecUppercase
+      Color = clCream
+      Font.Height = -19
+      OnChange = Edit11Change
+      OnEnter = AnyEditEnter
+      OnExit = AnyEditExit
+      OnKeyDown = Edit2KeyDown
+      ParentFont = False
+      TabOrder = 1
+    end
+    object Label54: TLabel
+      Left = 670
+      Height = 18
+      Top = 10
+      Width = 71
+      Caption = 'Отчество:'
+      Font.Color = clBlack
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+    end
+    object Edit12: TEdit
+      Left = 756
+      Height = 32
+      Top = 6
+      Width = 237
+      CharCase = ecUppercase
+      Color = clCream
+      Enabled = False
+      Font.Height = -19
+      OnEnter = AnyEditEnter
+      OnExit = AnyEditExit
+      OnKeyDown = Edit2KeyDown
+      ParentFont = False
+      TabOrder = 2
+    end
+    object Label55: TLabel
+      Left = 16
+      Height = 18
+      Top = 56
+      Width = 106
+      Caption = 'Документ. Тип:'
+      Font.Color = clBlack
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+    end
+    object Edit13: TEdit
+      Left = 609
+      Height = 32
+      Top = 52
+      Width = 260
+      CharCase = ecUppercase
+      Color = clCream
+      Enabled = False
+      Font.Height = -19
+      OnEnter = AnyEditEnter
+      OnExit = AnyEditExit
+      OnKeyDown = Edit13KeyDown
+      OnKeyUp = Edit2KeyUp
+      ParentFont = False
+      TabOrder = 4
+    end
+    object Label56: TLabel
+      Left = 482
+      Height = 18
+      Top = 56
+      Width = 105
+      Caption = 'серия / номер:'
+      Font.Color = clBlack
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+    end
+    object Edit14: TEdit
+      Left = 733
+      Height = 32
+      Top = 95
+      Width = 260
+      CharCase = ecUppercase
+      Color = clCream
+      Enabled = False
+      Font.Height = -19
+      OnEnter = AnyEditEnter
+      OnExit = AnyEditExit
+      OnKeyDown = Edit2KeyDown
+      ParentFont = False
+      TabOrder = 7
+      Text = 'РОССИЯ'
+      Visible = False
+    end
+    object Label57: TLabel
+      Left = 608
+      Height = 18
+      Top = 101
+      Width = 96
+      Caption = 'Гражданство:'
+      Font.Color = clBlack
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label58: TLabel
+      Left = 369
+      Height = 18
+      Top = 101
+      Width = 30
+      Caption = 'пол:'
+      Font.Color = clBlack
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label59: TLabel
+      Left = 16
+      Height = 18
+      Top = 101
+      Width = 112
+      Alignment = taCenter
+      Caption = 'Дата рождения:'
+      Font.Color = clBlack
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+      WordWrap = True
+    end
+    object ComboBox2: TComboBox
+      Left = 413
+      Height = 30
+      Top = 95
+      Width = 132
+      Enabled = False
+      ItemHeight = 0
+      ItemIndex = 0
+      Items.Strings = (
+        'МУЖСКОЙ'
+        'ЖЕНСКИЙ'
+      )
+      TabOrder = 6
+      Text = 'МУЖСКОЙ'
+    end
+    object DateTimePicker2: TDateTimePicker
+      Left = 157
+      Height = 26
+      Top = 95
+      Width = 103
+      ArrowShape = asModernLarger
+      CenturyFrom = 1941
+      DateDisplayOrder = ddoDMY
+      MaxDate = 2958465
+      MinDate = -53780
+      Font.Height = -17
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 5
+      Enabled = False
+      TrailingSeparator = False
+      TextForNullDate = 'NULL'
+      LeadingZeros = True
+      Kind = dtkDate
+      TimeFormat = tf24
+      TimeDisplay = tdHM
+      DateMode = dmUpDown
+      Date = 29283
+      Time = 0.412619756942149
+      UseDefaultSeparators = True
+      HideDateTimeParts = []
+      MonthNames = 'Long'
+      OnChange = CheckBox1Change
+    end
+    object ComboBox1: TComboBox
+      Left = 142
+      Height = 28
+      Top = 54
+      Width = 305
+      Enabled = False
+      Font.Height = -15
+      ItemHeight = 0
+      ItemIndex = 0
+      Items.Strings = (
+        'Паспорт гражданина'
+        'Паспорт моряка'
+        'Заграничный паспорт'
+        'Паспорт иностранного гражданина'
+        'Свидетельство о рождении'
+        'Удостоверение личности военнослужащего'
+        'Удостоверение личности лица без гражданства'
+        'Временное удостоверение, выданное МВД'
+        'Военный билет военнослужаещего срочной службы'
+        'Вид на жительство'
+        'Справка об освобождения из мест лишения свободы'
+        'Паспорт гражданина СССР'
+        'Паспорт дипломатический'
+        'Паспорт служебный'
+        'Свидетельство о возвращении из стран СНГ'
+        'Справка об утере паспорта'
+        'Свидетельство о предоставлении временного убежища'
+        'Другие документы'
+      )
+      OnChange = ComboBox1Change
+      ParentFont = False
+      Style = csDropDownList
+      TabOrder = 3
+      Text = 'Паспорт гражданина'
+    end
+    object ComboBox7: TComboBox
+      Left = 738
+      Height = 31
+      Top = 95
+      Width = 245
+      Enabled = False
+      Font.Height = 16
+      ItemHeight = 0
+      ItemIndex = 0
+      Items.Strings = (
+        'РОССИЯ'
+        'АЗЕРБАЙДЖАН'
+        'АРМЕНИЯ'
+        'УКРАИНА'
+      )
+      ParentFont = False
+      TabOrder = 8
+      Text = 'РОССИЯ'
+    end
+  end
+  object GroupBox2: TGroupBox
+    AnchorSideTop.Control = GroupBox1
+    AnchorSideTop.Side = asrBottom
+    Left = 14
+    Height = 130
+    Top = 292
+    Width = 1002
+    BorderSpacing.Top = 20
+    Caption = 'ВОДИТЕЛЬ  № 2:'
+    ClientHeight = 110
+    ClientWidth = 998
+    TabOrder = 4
+    object Label60: TLabel
+      Left = 16
+      Height = 19
+      Top = 11
+      Width = 74
+      Caption = 'Фамилия:'
+      Font.Color = clBlack
+      Font.Height = -16
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label61: TLabel
+      Left = 369
+      Height = 19
+      Top = 11
+      Width = 36
+      Caption = 'Имя:'
+      Font.Color = clBlack
+      Font.Height = -16
+      ParentColor = False
+      ParentFont = False
+    end
+    object Edit18: TEdit
+      Left = 413
+      Height = 32
+      Top = 6
+      Width = 244
+      CharCase = ecUppercase
+      Color = clCream
+      Enabled = False
+      Font.Height = -19
+      OnChange = Edit18Change
+      OnEnter = AnyEditEnter
+      OnExit = AnyEditExit
+      OnKeyDown = Edit2KeyDown
+      ParentFont = False
+      TabOrder = 1
+    end
+    object Label62: TLabel
+      Left = 670
+      Height = 18
+      Top = 11
+      Width = 71
+      Caption = 'Отчество:'
+      Font.Color = clBlack
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+    end
+    object Edit19: TEdit
+      Left = 756
+      Height = 32
+      Top = 6
+      Width = 237
+      CharCase = ecUppercase
+      Color = clCream
+      Enabled = False
+      Font.Height = -19
+      OnEnter = AnyEditEnter
+      OnExit = AnyEditExit
+      OnKeyDown = Edit2KeyDown
+      ParentFont = False
+      TabOrder = 2
+    end
+    object Edit3: TEdit
+      Left = 104
+      Height = 32
+      Top = 6
+      Width = 251
+      CharCase = ecUppercase
+      Color = clCream
+      Font.Height = -19
+      OnEnter = AnyEditEnter
+      OnExit = AnyEditExit
+      OnKeyDown = Edit2KeyDown
+      OnKeyUp = Edit2KeyUp
+      ParentFont = False
+      TabOrder = 0
+    end
+    object Label63: TLabel
+      Left = 16
+      Height = 18
+      Top = 56
+      Width = 106
+      Caption = 'Документ. Тип:'
+      Font.Color = clBlack
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+    end
+    object Edit15: TEdit
+      Left = 609
+      Height = 32
+      Top = 53
+      Width = 260
+      CharCase = ecUppercase
+      Color = clCream
+      Enabled = False
+      Font.Height = -19
+      OnEnter = AnyEditEnter
+      OnExit = AnyEditExit
+      OnKeyDown = Edit13KeyDown
+      OnKeyUp = Edit2KeyUp
+      ParentFont = False
+      TabOrder = 4
+    end
+    object Label64: TLabel
+      Left = 482
+      Height = 18
+      Top = 56
+      Width = 105
+      Caption = 'серия / номер:'
+      Font.Color = clBlack
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+    end
+    object Edit16: TEdit
+      Left = 733
+      Height = 32
+      Top = 97
+      Width = 260
+      CharCase = ecUppercase
+      Color = clCream
+      Enabled = False
+      Font.Height = -19
+      OnEnter = AnyEditEnter
+      OnExit = AnyEditExit
+      OnKeyDown = Edit2KeyDown
+      ParentFont = False
+      TabOrder = 7
+      Text = 'РОССИЯ'
+      Visible = False
+    end
+    object Label65: TLabel
+      Left = 608
+      Height = 18
+      Top = 101
+      Width = 96
+      Caption = 'Гражданство:'
+      Font.Color = clBlack
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label66: TLabel
+      Left = 369
+      Height = 18
+      Top = 101
+      Width = 30
+      Caption = 'пол:'
+      Font.Color = clBlack
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label67: TLabel
+      Left = 16
+      Height = 18
+      Top = 101
+      Width = 112
+      Alignment = taCenter
+      Caption = 'Дата рождения:'
+      Font.Color = clBlack
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+      WordWrap = True
+    end
+    object ComboBox3: TComboBox
+      Left = 142
+      Height = 28
+      Top = 54
+      Width = 305
+      Enabled = False
+      Font.Height = -15
+      ItemHeight = 0
+      ItemIndex = 0
+      Items.Strings = (
+        'Паспорт гражданина'
+        'Паспорт моряка'
+        'Заграничный паспорт'
+        'Паспорт иностранного гражданина'
+        'Свидетельство о рождении'
+        'Удостоверение личности военнослужащего'
+        'Удостоверение личности лица без гражданства'
+        'Временное удостоверение, выданное МВД'
+        'Военный билет военнослужаещего срочной службы'
+        'Вид на жительство'
+        'Справка об освобождения из мест лишения свободы'
+        'Паспорт гражданина СССР'
+        'Паспорт дипломатический'
+        'Паспорт служебный'
+        'Свидетельство о возвращении из стран СНГ'
+        'Справка об утере паспорта'
+        'Свидетельство о предоставлении временного убежища'
+        'Другие документы'
+      )
+      OnChange = ComboBox1Change
+      ParentFont = False
+      Style = csDropDownList
+      TabOrder = 3
+      Text = 'Паспорт гражданина'
+    end
+    object ComboBox4: TComboBox
+      Left = 413
+      Height = 30
+      Top = 97
+      Width = 132
+      Enabled = False
+      ItemHeight = 0
+      ItemIndex = 0
+      Items.Strings = (
+        'МУЖСКОЙ'
+        'ЖЕНСКИЙ'
+      )
+      OnChange = ComboBox1Change
+      TabOrder = 6
+      Text = 'МУЖСКОЙ'
+    end
+    object DateTimePicker3: TDateTimePicker
+      Left = 157
+      Height = 26
+      Top = 97
+      Width = 103
+      ArrowShape = asModernLarger
+      CenturyFrom = 1941
+      DateDisplayOrder = ddoDMY
+      MaxDate = 2958465
+      MinDate = -53780
+      Font.Height = -17
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 5
+      Enabled = False
+      TrailingSeparator = False
+      TextForNullDate = 'NULL'
+      LeadingZeros = True
+      Kind = dtkDate
+      TimeFormat = tf24
+      TimeDisplay = tdHM
+      DateMode = dmUpDown
+      Date = 28949
+      Time = 0.412619756942149
+      UseDefaultSeparators = True
+      HideDateTimeParts = []
+      MonthNames = 'Long'
+      OnChange = ComboBox1Change
+    end
+    object ComboBox8: TComboBox
+      Left = 738
+      Height = 31
+      Top = 97
+      Width = 245
+      Enabled = False
+      Font.Height = 16
+      ItemHeight = 0
+      ItemIndex = 0
+      Items.Strings = (
+        'РОССИЯ'
+        'АЗЕРБАЙДЖАН'
+        'АРМЕНИЯ'
+        'УКРАИНА'
+      )
+      ParentFont = False
+      TabOrder = 8
+      Text = 'РОССИЯ'
+    end
+  end
+  object Label47: TLabel
+    Left = 715
+    Height = 19
+    Top = 587
+    Width = 85
+    Caption = 'Мест всего:'
+    Font.Color = clBlack
+    Font.Height = -16
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label48: TLabel
+    Left = 824
+    Height = 28
+    Top = 583
+    Width = 39
+    Caption = '999'
+    Color = clCream
+    Font.Color = clBlack
+    Font.Height = -24
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object GroupBox3: TGroupBox
+    AnchorSideTop.Control = GroupBox2
+    AnchorSideTop.Side = asrBottom
+    Left = 14
+    Height = 95
+    Top = 442
+    Width = 1002
+    BorderSpacing.Top = 20
+    Caption = 'ВОДИТЕЛЬ  № 3:'
+    ClientHeight = 75
+    ClientWidth = 998
+    TabOrder = 5
+    Visible = False
+    object Label68: TLabel
+      Left = 16
+      Height = 19
+      Top = 12
+      Width = 74
+      Caption = 'Фамилия:'
+      Font.Color = clBlack
+      Font.Height = -16
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label69: TLabel
+      Left = 369
+      Height = 19
+      Top = 12
+      Width = 36
+      Caption = 'Имя:'
+      Font.Color = clBlack
+      Font.Height = -16
+      ParentColor = False
+      ParentFont = False
+    end
+    object Edit20: TEdit
+      Left = 413
+      Height = 32
+      Top = 6
+      Width = 244
+      CharCase = ecUppercase
+      Color = clCream
+      Enabled = False
+      Font.Height = -19
+      OnChange = Edit20Change
+      OnEnter = AnyEditEnter
+      OnExit = AnyEditExit
+      OnKeyDown = Edit2KeyDown
+      ParentFont = False
+      TabOrder = 1
+    end
+    object Label70: TLabel
+      Left = 670
+      Height = 18
+      Top = 12
+      Width = 71
+      Caption = 'Отчество:'
+      Font.Color = clBlack
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+    end
+    object Edit21: TEdit
+      Left = 756
+      Height = 32
+      Top = 6
+      Width = 237
+      CharCase = ecUppercase
+      Color = clCream
+      Enabled = False
+      Font.Height = -19
+      OnEnter = AnyEditEnter
+      OnExit = AnyEditExit
+      OnKeyDown = Edit2KeyDown
+      ParentFont = False
+      TabOrder = 2
+    end
+    object Edit4: TEdit
+      Left = 104
+      Height = 32
+      Top = 6
+      Width = 251
+      CharCase = ecUppercase
+      Color = clCream
+      Font.Height = -19
+      OnEnter = AnyEditEnter
+      OnExit = AnyEditExit
+      OnKeyDown = Edit2KeyDown
+      OnKeyUp = Edit2KeyUp
+      ParentFont = False
+      TabOrder = 0
+    end
+    object Label71: TLabel
+      Left = 16
+      Height = 18
+      Top = 56
+      Width = 106
+      Caption = 'Документ. Тип:'
+      Font.Color = clBlack
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+    end
+    object Edit17: TEdit
+      Left = 608
+      Height = 32
+      Top = 52
+      Width = 260
+      CharCase = ecUppercase
+      Color = clCream
+      Enabled = False
+      Font.Height = -19
+      OnEnter = AnyEditEnter
+      OnExit = AnyEditExit
+      OnKeyDown = Edit13KeyDown
+      OnKeyUp = Edit2KeyUp
+      ParentFont = False
+      TabOrder = 4
+    end
+    object Label72: TLabel
+      Left = 482
+      Height = 18
+      Top = 56
+      Width = 105
+      Caption = 'серия / номер:'
+      Font.Color = clBlack
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+    end
+    object Edit22: TEdit
+      Left = 733
+      Height = 32
+      Top = 97
+      Width = 260
+      CharCase = ecUppercase
+      Color = clCream
+      Enabled = False
+      Font.Height = -19
+      OnEnter = AnyEditEnter
+      OnExit = AnyEditExit
+      OnKeyDown = Edit2KeyDown
+      ParentFont = False
+      TabOrder = 7
+      Text = 'РОССИЯ'
+      Visible = False
+    end
+    object Label73: TLabel
+      Left = 608
+      Height = 18
+      Top = 101
+      Width = 96
+      Caption = 'Гражданство:'
+      Font.Color = clBlack
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label74: TLabel
+      Left = 369
+      Height = 18
+      Top = 101
+      Width = 30
+      Caption = 'пол:'
+      Font.Color = clBlack
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label75: TLabel
+      Left = 16
+      Height = 18
+      Top = 101
+      Width = 112
+      Alignment = taCenter
+      Caption = 'Дата рождения:'
+      Font.Color = clBlack
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+      WordWrap = True
+    end
+    object ComboBox5: TComboBox
+      Left = 142
+      Height = 28
+      Top = 53
+      Width = 305
+      Enabled = False
+      Font.Height = -15
+      ItemHeight = 0
+      ItemIndex = 0
+      Items.Strings = (
+        'Паспорт гражданина'
+        'Паспорт моряка'
+        'Заграничный паспорт'
+        'Паспорт иностранного гражданина'
+        'Свидетельство о рождении'
+        'Удостоверение личности военнослужащего'
+        'Удостоверение личности лица без гражданства'
+        'Временное удостоверение, выданное МВД'
+        'Военный билет военнослужаещего срочной службы'
+        'Вид на жительство'
+        'Справка об освобождения из мест лишения свободы'
+        'Паспорт гражданина СССР'
+        'Паспорт дипломатический'
+        'Паспорт служебный'
+        'Свидетельство о возвращении из стран СНГ'
+        'Справка об утере паспорта'
+        'Свидетельство о предоставлении временного убежища'
+        'Другие документы'
+      )
+      OnChange = ComboBox1Change
+      ParentFont = False
+      Style = csDropDownList
+      TabOrder = 3
+      Text = 'Паспорт гражданина'
+    end
+    object ComboBox6: TComboBox
+      Left = 413
+      Height = 30
+      Top = 97
+      Width = 132
+      Enabled = False
+      ItemHeight = 0
+      ItemIndex = 0
+      Items.Strings = (
+        'МУЖСКОЙ'
+        'ЖЕНСКИЙ'
+      )
+      OnChange = ComboBox1Change
+      TabOrder = 6
+      Text = 'МУЖСКОЙ'
+    end
+    object DateTimePicker4: TDateTimePicker
+      Left = 157
+      Height = 26
+      Top = 97
+      Width = 103
+      ArrowShape = asModernLarger
+      CenturyFrom = 1941
+      DateDisplayOrder = ddoDMY
+      MaxDate = 2958465
+      MinDate = -53780
+      Font.Height = -17
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 5
+      Enabled = False
+      TrailingSeparator = False
+      TextForNullDate = 'NULL'
+      LeadingZeros = True
+      Kind = dtkDate
+      TimeFormat = tf24
+      TimeDisplay = tdHM
+      DateMode = dmUpDown
+      Date = 28949
+      Time = 0.412619756942149
+      UseDefaultSeparators = True
+      HideDateTimeParts = []
+      MonthNames = 'Long'
+      OnChange = ComboBox1Change
+    end
+    object ComboBox9: TComboBox
+      Left = 738
+      Height = 31
+      Top = 97
+      Width = 245
+      Enabled = False
+      Font.Height = 16
+      ItemHeight = 0
+      ItemIndex = 0
+      Items.Strings = (
+        'РОССИЯ'
+        'АЗЕРБАЙДЖАН'
+        'АРМЕНИЯ'
+        'УКРАИНА'
+      )
+      ParentFont = False
+      TabOrder = 8
+      Text = 'РОССИЯ'
+    end
+  end
+  object StringGrid1: TStringGrid
+    Left = 680
+    Height = 31
+    Top = 638
+    Width = 312
+    ColCount = 2
+    DefaultColWidth = 300
+    DefaultRowHeight = 30
+    FixedCols = 0
+    FixedRows = 0
+    Font.Height = -17
+    Options = [goFixedVertLine, goHorzLine, goSmoothScroll]
+    ParentFont = False
+    RowCount = 1
+    ScrollBars = ssNone
+    TabOrder = 15
+    TitleFont.Height = -17
+    Visible = False
+  end
+  object Label7: TLabel
+    Left = 653
+    Height = 18
+    Top = 587
+    Width = 18
+    Caption = 'из'
+    Font.Height = -15
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object CheckBox2: TCheckBox
+    Left = 739
+    Height = 21
+    Top = 103
+    Width = 270
+    AutoSize = False
+    Caption = 'Продавать через интернет-сайт'
+    Font.Height = -16
+    OnChange = CheckBox2Change
+    ParentFont = False
+    TabOrder = 2
+  end
+  object CheckBox3: TCheckBox
+    Left = 448
+    Height = 21
+    Top = 103
+    Width = 270
+    AutoSize = False
+    Caption = 'Заказной ПОСАДОЧНЫЙ ТАЛОН'
+    Enabled = False
+    Font.Height = -16
+    OnChange = CheckBox3Change
+    ParentFont = False
+    TabOrder = 1
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = False
+    Properties.Strings = (
+      'AutoEncodeStrings='
+    )
+    TransactIsolationLevel = tiReadCommitted
+    Port = 0
+    Protocol = 'postgresql'
+    left = 936
+    top = 32
+  end
+  object ZReadOnlyQuery1: TZReadOnlyQuery
+    Connection = ZConnection1
+    ParamCheck = False
+    Params = <>
+    left = 88
+    top = 8
+  end
+  object ZReadOnlyQuery2: TZReadOnlyQuery
+    Connection = ZConnection1
+    ParamCheck = False
+    Params = <>
+    left = 200
+    top = 24
+  end
+  object ZConnection2: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = False
+    Properties.Strings = (
+      'AutoEncodeStrings='
+    )
+    TransactIsolationLevel = tiReadCommitted
+    Port = 0
+    Protocol = 'postgresql'
+    left = 888
+    top = 72
+  end
+end

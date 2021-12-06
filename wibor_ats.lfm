@@ -1,0 +1,84 @@
+object Form5: TForm5
+  Left = 617
+  Height = 535
+  Top = 269
+  Width = 660
+  BorderIcons = []
+  BorderStyle = bsNone
+  Caption = 'Выбор АТС из списка'
+  ClientHeight = 535
+  ClientWidth = 660
+  KeyPreview = True
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  OnPaint = FormPaint
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '1.6.0.4'
+  object StringGrid1: TStringGrid
+    Left = 8
+    Height = 458
+    Top = 32
+    Width = 645
+    ColCount = 2
+    DefaultRowHeight = 34
+    FixedCols = 0
+    Font.Height = -19
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRowSelect, goSmoothScroll]
+    ParentFont = False
+    RowCount = 1
+    ScrollBars = ssNone
+    TabOrder = 0
+    TitleFont.Height = -16
+    ColWidths = (
+      78
+      565
+    )
+    Cells = (
+      2
+      0
+      0
+      '№ АТС'
+      1
+      0
+      'Наименование АТС'
+    )
+  end
+  object Label1: TLabel
+    Left = 8
+    Height = 26
+    Top = 3
+    Width = 645
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Выбор АТС  из списка'
+    Font.Height = -21
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label43: TLabel
+    Left = 8
+    Height = 42
+    Top = 489
+    Width = 645
+    AutoSize = False
+    Caption = '---------------------------------------------------------------------Информация-------------------------------------------------------------------------------------------------------------'#10'ESC - Отмена , ENTER - Выбор  '
+    Font.Color = clBlue
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit1: TEdit
+    Left = 168
+    Height = 35
+    Top = 472
+    Width = 466
+    AutoSize = False
+    Font.Color = clTeal
+    Font.Height = -21
+    MaxLength = 30
+    OnChange = Edit1Change
+    ParentFont = False
+    TabOrder = 1
+    Visible = False
+  end
+end

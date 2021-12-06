@@ -1,0 +1,108 @@
+object FormWT: TFormWT
+  Left = 516
+  Height = 768
+  Top = 221
+  Width = 750
+  ActiveControl = StringGrid1
+  BorderIcons = []
+  BorderStyle = bsNone
+  Caption = 'Печать билетов интернет продажи'
+  ClientHeight = 768
+  ClientWidth = 750
+  Font.Height = -15
+  KeyPreview = True
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  OnPaint = FormPaint
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '1.6.4.0'
+  object Label36: TLabel
+    Left = 11
+    Height = 28
+    Top = 7
+    Width = 382
+    AutoSize = False
+    Caption = 'Билеты интернет продажи на рейс №'
+    Font.Color = clBlack
+    Font.Height = -19
+    ParentColor = False
+    ParentFont = False
+  end
+  object StringGrid1: TStringGrid
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Label36
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 2
+    Height = 658
+    Top = 38
+    Width = 745
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Left = 2
+    BorderSpacing.Top = 3
+    BorderSpacing.Right = 3
+    BorderSpacing.Bottom = 3
+    ColCount = 3
+    DefaultColWidth = 30
+    DefaultDrawing = False
+    DefaultRowHeight = 220
+    FixedCols = 0
+    FixedRows = 0
+    Font.Height = -15
+    GridLineWidth = 2
+    Options = [goHorzLine, goRowSelect]
+    ParentFont = False
+    RowCount = 1
+    ScrollBars = ssVertical
+    TabOrder = 0
+    TitleFont.Height = -15
+    OnDrawCell = StringGrid1DrawCell
+  end
+  object Label43: TLabel
+    Left = 0
+    Height = 54
+    Top = 711
+    Width = 750
+    Align = alBottom
+    Anchors = [akBottom]
+    BorderSpacing.Bottom = 3
+    Caption = '---------------------------------------------------------------  информация ------------------------------------------------------------'#10' [ENTER]     -  ПЕЧАТЬ ВЫБРАННОГО БИЛЕТА'#10' [ПРОБЕЛ]  -  ПЕЧАТЬ ВСЕХ БИЛЕТОВ                                   [ESC]  -  ВЫХОД'
+    Font.Color = clBlue
+    Font.Height = -15
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label1: TLabel
+    Left = 407
+    Height = 22
+    Top = 8
+    Width = 60
+    Caption = 'Label1'
+    Font.Height = -19
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = False
+    Properties.Strings = (
+      'AutoEncodeStrings='
+    )
+    TransactIsolationLevel = tiReadCommitted
+    Port = 0
+    Protocol = 'postgresql'
+    left = 88
+    top = 32
+  end
+  object ZReadOnlyQuery1: TZReadOnlyQuery
+    Connection = ZConnection1
+    ParamCheck = False
+    Params = <>
+    left = 159
+    top = 51
+  end
+end

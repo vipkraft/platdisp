@@ -1,0 +1,100 @@
+object Form8: TForm8
+  Left = 510
+  Height = 366
+  Top = 236
+  Width = 497
+  BorderIcons = []
+  BorderStyle = bsNone
+  Caption = 'Выбор для печати посадочной ведомости'
+  ClientHeight = 366
+  ClientWidth = 497
+  Font.Height = -15
+  KeyPreview = True
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  OnPaint = FormPaint
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '1.6.4.0'
+  object Label36: TLabel
+    Left = 11
+    Height = 28
+    Top = 7
+    Width = 366
+    AutoSize = False
+    Caption = 'Посадочные ведомости на рейс №'
+    Font.Color = clBlack
+    Font.Height = -19
+    ParentColor = False
+    ParentFont = False
+  end
+  object StringGrid1: TStringGrid
+    Left = 1
+    Height = 279
+    Top = 40
+    Width = 496
+    Anchors = [akTop, akBottom]
+    BorderSpacing.Top = 3
+    BorderSpacing.Bottom = 3
+    ColCount = 4
+    DefaultRowHeight = 38
+    FixedCols = 0
+    FixedRows = 0
+    Font.Height = -15
+    Options = [goHorzLine, goRowSelect]
+    ParentFont = False
+    ScrollBars = ssVertical
+    TabOrder = 0
+    TitleFont.Height = -15
+    ColWidths = (
+      44
+      300
+      64
+      64
+    )
+  end
+  object Label43: TLabel
+    Left = 0
+    Height = 36
+    Top = 327
+    Width = 497
+    Align = alBottom
+    Anchors = [akBottom]
+    BorderSpacing.Bottom = 3
+    Caption = '------------------------------------Информация-------------------------------'#10'   [ESC] - Отмена,  [ENTER] - Выбрать'
+    Font.Color = clBlue
+    Font.Height = -15
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label1: TLabel
+    Left = 403
+    Height = 22
+    Top = 7
+    Width = 60
+    Caption = 'Label1'
+    Font.Height = -19
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = False
+    Properties.Strings = (
+      'AutoEncodeStrings='
+    )
+    TransactIsolationLevel = tiReadCommitted
+    Port = 0
+    Protocol = 'postgresql'
+    left = 88
+    top = 32
+  end
+  object ZReadOnlyQuery1: TZReadOnlyQuery
+    Connection = ZConnection1
+    ParamCheck = False
+    Params = <>
+    left = 159
+    top = 51
+  end
+end

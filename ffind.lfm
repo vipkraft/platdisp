@@ -1,0 +1,285 @@
+object Form11: TForm11
+  Left = 296
+  Height = 700
+  Top = 236
+  Width = 970
+  Caption = 'Поиск пассажира'
+  ClientHeight = 700
+  ClientWidth = 970
+  KeyPreview = True
+  OnKeyDown = FormKeyDown
+  Position = poScreenCenter
+  LCLVersion = '1.6.0.4'
+  object Label1: TLabel
+    AnchorSideTop.Control = Owner
+    Left = 0
+    Height = 28
+    Top = 5
+    Width = 970
+    Align = alTop
+    Alignment = taCenter
+    Anchors = [akTop]
+    AutoSize = False
+    BorderSpacing.Top = 5
+    Caption = 'Поиск пассажира по параметрам'
+    Font.Color = clBlack
+    Font.Height = -19
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    AnchorSideBottom.Control = Owner
+    Left = 0
+    Height = 38
+    Top = 655
+    Width = 970
+    Align = alBottom
+    Anchors = [akBottom]
+    BorderSpacing.Bottom = 7
+    Caption = '--------------------------------------------------------------------------Информация--------------------------------------------------------------------'#10'    [F1]   -  Помощь                           [ESC]  -  Отмена/Выход                     [F5] - ПОИСК'
+    Font.Color = clBlue
+    Font.Height = -16
+    ParentColor = False
+    ParentFont = False
+  end
+  object GroupBox1: TGroupBox
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Label1
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 5
+    Height = 277
+    Top = 43
+    Width = 961
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Left = 5
+    BorderSpacing.Top = 10
+    BorderSpacing.Right = 4
+    Caption = 'Внесите известные данные:'
+    ClientHeight = 257
+    ClientWidth = 957
+    TabOrder = 0
+    object Label3: TLabel
+      Left = 42
+      Height = 19
+      Top = 31
+      Width = 74
+      Caption = 'Фамилия:'
+      Font.Color = clBlack
+      Font.Height = -16
+      ParentColor = False
+      ParentFont = False
+    end
+    object Edit1: TEdit
+      Left = 128
+      Height = 32
+      Top = 24
+      Width = 289
+      CharCase = ecUppercase
+      Color = clCream
+      Font.Height = -19
+      ParentFont = False
+      TabOrder = 0
+    end
+    object Label4: TLabel
+      Left = 80
+      Height = 19
+      Top = 81
+      Width = 36
+      Caption = 'Имя:'
+      Font.Color = clBlack
+      Font.Height = -16
+      ParentColor = False
+      ParentFont = False
+    end
+    object Edit2: TEdit
+      Left = 128
+      Height = 32
+      Top = 74
+      Width = 289
+      CharCase = ecUppercase
+      Color = clCream
+      Font.Height = -19
+      ParentFont = False
+      TabOrder = 1
+    end
+    object Label5: TLabel
+      Left = 45
+      Height = 18
+      Top = 127
+      Width = 71
+      Caption = 'Отчество:'
+      Font.Color = clBlack
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+    end
+    object Edit3: TEdit
+      Left = 128
+      Height = 32
+      Top = 120
+      Width = 289
+      CharCase = ecUppercase
+      Color = clCream
+      Font.Height = -19
+      ParentFont = False
+      TabOrder = 2
+    end
+    object Edit4: TEdit
+      Left = 200
+      Height = 32
+      Top = 170
+      Width = 260
+      CharCase = ecUppercase
+      Color = clCream
+      Font.Height = -19
+      ParentFont = False
+      TabOrder = 3
+    end
+    object Label6: TLabel
+      Left = 16
+      Height = 18
+      Top = 178
+      Width = 181
+      Caption = 'Документ. серия / номер:'
+      Font.Color = clBlack
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label7: TLabel
+      Left = 76
+      Height = 18
+      Top = 221
+      Width = 112
+      Alignment = taCenter
+      Caption = 'Дата рождения:'
+      Font.Color = clBlack
+      Font.Height = -15
+      ParentColor = False
+      ParentFont = False
+      WordWrap = True
+    end
+    object DateTimePicker1: TDateTimePicker
+      Left = 200
+      Height = 28
+      Top = 217
+      Width = 105
+      ArrowShape = asModernLarger
+      CenturyFrom = 1941
+      DateDisplayOrder = ddoDMY
+      MaxDate = 2958465
+      MinDate = -53780
+      Font.Height = -17
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 4
+      TrailingSeparator = False
+      TextForNullDate = 'NULL'
+      LeadingZeros = True
+      Kind = dtkDate
+      TimeFormat = tf24
+      TimeDisplay = tdHM
+      DateMode = dmUpDown
+      Date = 31139
+      Time = 0.412619756942149
+      UseDefaultSeparators = True
+    end
+  end
+  object StringGrid1: TStringGrid
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = GroupBox1
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Label2
+    Left = 3
+    Height = 329
+    Top = 323
+    Width = 964
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    AutoEdit = False
+    BorderSpacing.Left = 3
+    BorderSpacing.Top = 3
+    BorderSpacing.Right = 3
+    BorderSpacing.Bottom = 3
+    ColCount = 7
+    ColumnClickSorts = True
+    DefaultDrawing = False
+    FixedCols = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goColSizing, goRowSelect, goDblClickAutoSize, goSmoothScroll, goDontScrollPartCell]
+    RowCount = 1
+    TabOrder = 1
+    TitleFont.Height = -13
+    ColWidths = (
+      265
+      113
+      110
+      271
+      82
+      59
+      51
+    )
+    Cells = (
+      7
+      0
+      0
+      'ФИО'
+      1
+      0
+      'Документ'
+      2
+      0
+      'Дата рождения'
+      3
+      0
+      'Рейс'
+      4
+      0
+      'Дата отпр.'
+      5
+      0
+      'Время отпр.'
+      6
+      0
+      'Место'
+    )
+  end
+  object Panel1: TPanel
+    Left = 248
+    Height = 90
+    Top = 352
+    Width = 552
+    Caption = 'Подождите !!!  Выполняется запрос...'
+    Color = clSkyBlue
+    Font.Color = clBlack
+    Font.Height = -19
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 2
+    Visible = False
+    OnClick = Panel1Click
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = False
+    Properties.Strings = (
+      'AutoEncodeStrings='
+    )
+    TransactIsolationLevel = tiReadCommitted
+    Port = 0
+    Protocol = 'postgresql'
+    left = 854
+    top = 16
+  end
+  object ZQuery1: TZReadOnlyQuery
+    Connection = ZConnection1
+    ParamCheck = False
+    Params = <>
+    left = 800
+    top = 85
+  end
+end

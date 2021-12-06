@@ -1,0 +1,109 @@
+object Form4: TForm4
+  Left = 423
+  Height = 500
+  Top = 204
+  Width = 1000
+  ActiveControl = StringGrid2
+  BorderIcons = []
+  BorderStyle = bsNone
+  Caption = 'Состав и тарифы расписания'
+  ClientHeight = 500
+  ClientWidth = 1000
+  KeyPreview = True
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  OnPaint = FormPaint
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '1.6.4.0'
+  object StringGrid2: TStringGrid
+    AnchorSideTop.Control = Label1
+    AnchorSideTop.Side = asrBottom
+    AnchorSideBottom.Control = Label43
+    Left = 16
+    Height = 422
+    Top = 28
+    Width = 984
+    Anchors = [akTop, akBottom]
+    BorderSpacing.Top = 2
+    BorderSpacing.Bottom = 1
+    BorderStyle = bsNone
+    Color = 14480092
+    DefaultRowHeight = 30
+    FixedCols = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRowSelect, goSmoothScroll]
+    ParentFont = False
+    RowCount = 1
+    ScrollBars = ssAutoVertical
+    TabOrder = 0
+    TitleFont.Height = -12
+    Visible = False
+    OnDrawCell = StringGrid2DrawCell
+  end
+  object Label43: TLabel
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 8
+    Height = 49
+    Top = 451
+    Width = 984
+    Anchors = [akBottom]
+    AutoSize = False
+    Caption = '-----------------------------------------------------------------------------------Информация-------------------------------------------------------------------------------------------------------------'#10'[F5] - Загрузить тариф          [ENTER] - Подключиться к пункту продаж              [ESC] - Выход'
+    Font.Color = clBlue
+    Font.Height = -16
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label1: TLabel
+    AnchorSideTop.Control = Owner
+    Left = 473
+    Height = 22
+    Top = 4
+    Width = 55
+    Alignment = taCenter
+    Anchors = [akTop]
+    BorderSpacing.Top = 4
+    Caption = 'Label1'
+    Font.Height = -19
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 18
+    Top = 8
+    Width = 44
+    Caption = 'Label2'
+    ParentColor = False
+    Visible = False
+  end
+  object Label3: TLabel
+    Left = 72
+    Height = 18
+    Top = 8
+    Width = 44
+    Caption = 'Label3'
+    ParentColor = False
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = False
+    Properties.Strings = (
+      'AutoEncodeStrings='
+    )
+    TransactIsolationLevel = tiReadCommitted
+    Port = 0
+    Protocol = 'postgresql'
+    left = 752
+    top = 440
+  end
+  object ZReadOnlyQuery1: TZReadOnlyQuery
+    Connection = ZConnection1
+    ParamCheck = False
+    Params = <>
+    left = 842
+    top = 431
+  end
+end
