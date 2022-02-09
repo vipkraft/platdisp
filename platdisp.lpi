@@ -153,6 +153,7 @@
         <ComponentName Value="Form1"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+        <CursorPos X="34" Y="6"/>
         <UsageCount Value="203"/>
         <Bookmarks Count="8">
           <Item0 X="16" Y="469" ID="3"/>
@@ -171,8 +172,8 @@
         <Filename Value="platproc.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="11"/>
-        <TopLine Value="1965"/>
-        <CursorPos X="26" Y="1978"/>
+        <TopLine Value="1175"/>
+        <CursorPos X="36" Y="1190"/>
         <UsageCount Value="203"/>
         <Loaded Value="True"/>
       </Unit2>
@@ -222,9 +223,11 @@
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="14"/>
         <TopLine Value="371"/>
-        <CursorPos X="23" Y="384"/>
+        <CursorPos X="36" Y="388"/>
+        <ComponentState Value="1"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit6>
       <Unit7>
         <Filename Value="wibor_ats.pas"/>
@@ -255,8 +258,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="12"/>
-        <TopLine Value="1915"/>
-        <CursorPos X="15" Y="1921"/>
+        <TopLine Value="218"/>
+        <CursorPos X="28" Y="230"/>
         <UsageCount Value="203"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -374,10 +377,11 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Auth"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="92"/>
-        <CursorPos X="29" Y="97"/>
+        <TopLine Value="232"/>
+        <CursorPos X="72" Y="240"/>
         <UsageCount Value="202"/>
         <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit20>
       <Unit21>
         <Filename Value="/usr/share/fpcsrc/rtl/objpas/strutils.pp"/>
@@ -419,124 +423,121 @@
         <UsageCount Value="10"/>
       </Unit25>
     </Units>
-    <JumpHistory Count="30" HistoryIndex="29">
+    <JumpHistory Count="29" HistoryIndex="28">
       <Position1>
-        <Filename Value="maindisp.pas"/>
+        <Filename Value="bron_main.pas"/>
+        <Caret Line="325" Column="29" TopLine="306"/>
       </Position1>
       <Position2>
-        <Filename Value="maindisp.pas"/>
-        <Caret Line="827" Column="59" TopLine="803"/>
+        <Filename Value="bron_main.pas"/>
       </Position2>
       <Position3>
         <Filename Value="bron_main.pas"/>
-        <Caret Line="5" Column="67"/>
+        <Caret Line="139" Column="18" TopLine="115"/>
       </Position3>
       <Position4>
         <Filename Value="bron_main.pas"/>
-        <Caret Line="79" Column="32" TopLine="55"/>
+        <Caret Line="211" Column="18" TopLine="187"/>
       </Position4>
       <Position5>
         <Filename Value="bron_main.pas"/>
-        <Caret Line="168" Column="36" TopLine="144"/>
+        <Caret Line="299" Column="29" TopLine="275"/>
       </Position5>
       <Position6>
         <Filename Value="bron_main.pas"/>
-        <Caret Line="229" Column="71" TopLine="217"/>
+        <Caret Line="300" Column="41" TopLine="276"/>
       </Position6>
       <Position7>
         <Filename Value="bron_main.pas"/>
-        <Caret Line="340" Column="40" TopLine="325"/>
+        <Caret Line="325" Column="29" TopLine="301"/>
       </Position7>
       <Position8>
         <Filename Value="bron_main.pas"/>
-        <Caret Line="495" Column="41" TopLine="472"/>
+        <Caret Line="326" Column="41" TopLine="302"/>
       </Position8>
       <Position9>
         <Filename Value="bron_main.pas"/>
-        <Caret Line="622" Column="43" TopLine="598"/>
+        <Caret Line="487" Column="19" TopLine="463"/>
       </Position9>
       <Position10>
         <Filename Value="bron_main.pas"/>
-        <Caret Line="780" Column="44" TopLine="756"/>
+        <Caret Line="549" Column="35" TopLine="525"/>
       </Position10>
       <Position11>
         <Filename Value="bron_main.pas"/>
-        <Caret Line="836" Column="46" TopLine="812"/>
+        <Caret Line="929" Column="84" TopLine="905"/>
       </Position11>
       <Position12>
         <Filename Value="bron_main.pas"/>
-        <Caret Line="985" Column="46" TopLine="961"/>
+        <Caret Line="931" Column="87" TopLine="907"/>
       </Position12>
       <Position13>
         <Filename Value="bron_main.pas"/>
-        <Caret Line="1875" Column="35" TopLine="1851"/>
+        <Caret Line="941" Column="88" TopLine="917"/>
       </Position13>
       <Position14>
         <Filename Value="bron_main.pas"/>
-        <Caret Line="80" Column="16" TopLine="65"/>
+        <Caret Line="943" Column="88" TopLine="919"/>
       </Position14>
       <Position15>
         <Filename Value="bron_main.pas"/>
-        <Caret Line="168" Column="36" TopLine="144"/>
+        <Caret Line="1080" Column="84" TopLine="1056"/>
       </Position15>
       <Position16>
         <Filename Value="bron_main.pas"/>
-        <Caret Line="229" Column="71" TopLine="205"/>
+        <Caret Line="1082" Column="87" TopLine="1058"/>
       </Position16>
       <Position17>
-        <Filename Value="maindisp.pas"/>
-        <Caret Line="1230" Column="17" TopLine="1208"/>
+        <Filename Value="bron_main.pas"/>
+        <Caret Line="1197" Column="49" TopLine="1182"/>
       </Position17>
       <Position18>
-        <Filename Value="maindisp.pas"/>
-        <Caret Line="2963" Column="45" TopLine="2947"/>
+        <Filename Value="bron_main.pas"/>
+        <Caret Line="1199" Column="49" TopLine="1193"/>
       </Position18>
       <Position19>
-        <Filename Value="maindisp.pas"/>
-        <Caret Line="6242" Column="34" TopLine="6242"/>
+        <Filename Value="bron_main.pas"/>
       </Position19>
       <Position20>
-        <Filename Value="maindisp.pas"/>
-        <Caret Line="6499" Column="68" TopLine="6463"/>
+        <Filename Value="bron_main.pas"/>
+        <Caret Line="299" Column="91" TopLine="282"/>
       </Position20>
       <Position21>
-        <Filename Value="maindisp.pas"/>
+        <Filename Value="bron_main.pas"/>
+        <Caret Line="301" Column="41" TopLine="288"/>
       </Position21>
       <Position22>
-        <Filename Value="rserver.pas"/>
-        <Caret Line="114" Column="35" TopLine="101"/>
+        <Filename Value="bron_main.pas"/>
+        <Caret Line="325" Column="91" TopLine="303"/>
       </Position22>
       <Position23>
-        <Filename Value="rserver.pas"/>
-        <Caret Line="241" Column="57" TopLine="226"/>
+        <Filename Value="bron_main.pas"/>
+        <Caret Line="318" Column="22" TopLine="303"/>
       </Position23>
       <Position24>
         <Filename Value="bron_main.pas"/>
-        <Caret Line="327" Column="44" TopLine="316"/>
+        <Caret Line="866" Column="53" TopLine="842"/>
       </Position24>
       <Position25>
-        <Filename Value="maindisp.pas"/>
-        <Caret Line="6244" Column="57" TopLine="6228"/>
+        <Filename Value="bron_main.pas"/>
+        <Caret Line="871" Column="58" TopLine="847"/>
       </Position25>
       <Position26>
         <Filename Value="bron_main.pas"/>
-        <Caret Line="327" Column="151" TopLine="307"/>
+        <Caret Line="1015" Column="53" TopLine="991"/>
       </Position26>
       <Position27>
         <Filename Value="bron_main.pas"/>
-        <Caret Line="1921" Column="15" TopLine="1915"/>
+        <Caret Line="1020" Column="58" TopLine="996"/>
       </Position27>
       <Position28>
-        <Filename Value="maindisp.pas"/>
-        <Caret Line="2696" Column="64" TopLine="2684"/>
+        <Filename Value="bron_main.pas"/>
+        <Caret Line="1335" Column="60" TopLine="1311"/>
       </Position28>
       <Position29>
-        <Filename Value="sostav_main.pas"/>
-        <Caret Line="275" Column="66" TopLine="258"/>
+        <Filename Value="maindisp.pas"/>
+        <Caret Line="143" Column="28" TopLine="134"/>
       </Position29>
-      <Position30>
-        <Filename Value="sostav_main.pas"/>
-      </Position30>
     </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>

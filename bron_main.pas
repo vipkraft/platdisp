@@ -226,8 +226,10 @@ procedure TForm7.fill_mas_seats;
 
     //========================= Состояние брони по рейсу =============================//
  ZReadOnlyQuery1.sql.Clear;
- ZReadOnlyQuery1.sql.add('select a.id_user,a.bron,a.createdate,(SELECT name FROM av_users b WHERE b.del=0 AND b.id=a.id_user ORDER BY b.createdate DESC limit 1 OFFSET 0) as name ');
- ZReadOnlyQuery1.sql.add('from av_disp_bron a WHERE a.del=0 AND a.date_trip='+quotedstr(tripdate)+' AND a.ot_id_point='+sale_server);
+ ZReadOnlyQuery1.sql.add('select a.id_user,a.bron,a.createdate, ');
+ ZReadOnlyQuery1.sql.add(' (SELECT name FROM av_users b WHERE b.del=0 AND b.id=a.id_user ORDER BY b.createdate DESC limit 1 OFFSET 0) as name ');
+ ZReadOnlyQuery1.sql.add(' ,(select substring(name for 13) from av_spr_point d where d.id=id_point order by createdate desc limit 1) as point ');
+ ZReadOnlyQuery1.sql.add(' from av_disp_bron a WHERE a.del=0 AND a.date_trip='+quotedstr(tripdate)+' AND a.ot_id_point='+sale_server);
  ZReadOnlyQuery1.sql.add(' AND a.id_shedule='+full_mas[idx,1]+' AND a.time_trip='+quotedstr(full_mas[idx,10])+' AND a.ot_point_order='+full_mas[idx,4]+';');
  //showmessage(ZReadOnlyQuery1.sql.Text);//$
  try
@@ -294,7 +296,7 @@ for k:=0 to length(mas_s)-1 do
            if mas_s[k,0]=mesta[m,n,1] then
               begin
                 mesta[m,n,2]:=mas_s[k,1];//статус места
-                mesta[m,n,3]:=mas_s[k,2];//ремарка
+                mesta[m,n,3]:=mas_s[k,2]+'|'+ZReadOnlyQuery1.FieldByName('point').asString;//ремарка
                 mesta[m,n,4]:=mas_s[k,3];//id_пользователя
                 mesta[m,n,5]:=mas_s[k,4];//имя пользователя
                 mesta[m,n,6]:=mas_s[k,5];//время дата
@@ -320,7 +322,7 @@ for k:=0 to length(mas_s)-1 do
                 //showmessage(mesta[m,n,1]+#13+mas_s[k,0]);
                 mesta[m,n,1]:=mas_s[k,0]; // !!! Добавляем место
                 mesta[m,n,2]:=mas_s[k,1];//статус места
-                mesta[m,n,3]:=mas_s[k,2];//ремарка
+                mesta[m,n,3]:=mas_s[k,2]+'|'+ZReadOnlyQuery1.FieldByName('point').asString;//ремарка
                 mesta[m,n,4]:=mas_s[k,3];//id_пользователя
                 mesta[m,n,5]:=mas_s[k,4];//имя пользователя
                 mesta[m,n,6]:=mas_s[k,5];//время дата
@@ -1865,7 +1867,7 @@ begin
           font.Style:=[fsBold];
           tw:=textwidth(Cells[aCol, aRow]);
           th:=textheight(Cells[aCol, aRow]);
-          TextOut(aRect.left+((aRect.Right-aRect.left) div 2)-(tw div 2),aRect.top+((aRect.bottom-aRect.top) div 2)-(th div 2) , Cells[aCol, aRow]);
+          TextOut(aRect.left+((aRect.Right-aRect.left) div 2)-(tw div 2),aRect.top+((aRect.bottom-aRect.top) div 2)-(th div 2), Cells[aCol, aRow]);
         end;
     //end;
  end;
